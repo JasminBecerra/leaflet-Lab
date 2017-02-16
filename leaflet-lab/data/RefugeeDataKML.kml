@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="RefugeeDataKML" id="RefugeeDataKML">
+	<SimpleField name="Country" type="string"></SimpleField>
+	<SimpleField name="YR2000" type="string"></SimpleField>
+	<SimpleField name="YR2001" type="string"></SimpleField>
+	<SimpleField name="YR2002" type="string"></SimpleField>
+	<SimpleField name="YR2003" type="string"></SimpleField>
+	<SimpleField name="YR2004" type="string"></SimpleField>
+	<SimpleField name="YR2005" type="string"></SimpleField>
+	<SimpleField name="YR2006" type="string"></SimpleField>
+	<SimpleField name="YR2007" type="string"></SimpleField>
+	<SimpleField name="YR2008" type="string"></SimpleField>
+	<SimpleField name="YR2009" type="string"></SimpleField>
+	<SimpleField name="YR2010" type="string"></SimpleField>
+	<SimpleField name="YR2011" type="int"></SimpleField>
+	<SimpleField name="YR2012" type="int"></SimpleField>
+	<SimpleField name="YR2013" type="int"></SimpleField>
+	<SimpleField name="YR2014" type="int"></SimpleField>
+	<SimpleField name="YR2015" type="int"></SimpleField>
+	<SimpleField name="latitude" type="float"></SimpleField>
+	<SimpleField name="longitude" type="float"></SimpleField>
+</Schema>
+<Folder><name>RefugeeDataKML</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Afghanistan</SimpleData>
+		<SimpleData name="YR2000">3587336</SimpleData>
+		<SimpleData name="YR2001">3809767</SimpleData>
+		<SimpleData name="YR2002">2510294</SimpleData>
+		<SimpleData name="YR2003">2136043</SimpleData>
+		<SimpleData name="YR2004">2414401</SimpleData>
+		<SimpleData name="YR2005">2166149</SimpleData>
+		<SimpleData name="YR2006">2107519</SimpleData>
+		<SimpleData name="YR2007">3057661</SimpleData>
+		<SimpleData name="YR2008">2833128</SimpleData>
+		<SimpleData name="YR2009">2887123</SimpleData>
+		<SimpleData name="YR2010">3054709</SimpleData>
+		<SimpleData name="YR2011">2664436</SimpleData>
+		<SimpleData name="YR2012">2586152</SimpleData>
+		<SimpleData name="YR2013">2556556</SimpleData>
+		<SimpleData name="YR2014">2596270</SimpleData>
+		<SimpleData name="YR2015">2666254</SimpleData>
+		<SimpleData name="latitude">33.8332481</SimpleData>
+		<SimpleData name="longitude">66.0252838</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>66.0252838,33.8332481</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Albania</SimpleData>
+		<SimpleData name="YR2000">6802</SimpleData>
+		<SimpleData name="YR2001">7626</SimpleData>
+		<SimpleData name="YR2002">10761</SimpleData>
+		<SimpleData name="YR2003">10385</SimpleData>
+		<SimpleData name="YR2004">10470</SimpleData>
+		<SimpleData name="YR2005">12722</SimpleData>
+		<SimpleData name="YR2006">14080</SimpleData>
+		<SimpleData name="YR2007">15340</SimpleData>
+		<SimpleData name="YR2008">15006</SimpleData>
+		<SimpleData name="YR2009">15711</SimpleData>
+		<SimpleData name="YR2010">14772</SimpleData>
+		<SimpleData name="YR2011">13551</SimpleData>
+		<SimpleData name="YR2012">12568</SimpleData>
+		<SimpleData name="YR2013">10084</SimpleData>
+		<SimpleData name="YR2014">10158</SimpleData>
+		<SimpleData name="YR2015">10421</SimpleData>
+		<SimpleData name="latitude">41.1111336</SimpleData>
+		<SimpleData name="longitude">20.0274525</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0274525,41.1111336</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Angola</SimpleData>
+		<SimpleData name="YR2000">433760</SimpleData>
+		<SimpleData name="YR2001">470625</SimpleData>
+		<SimpleData name="YR2002">435421</SimpleData>
+		<SimpleData name="YR2003">329583</SimpleData>
+		<SimpleData name="YR2004">228838</SimpleData>
+		<SimpleData name="YR2005">215827</SimpleData>
+		<SimpleData name="YR2006">206501</SimpleData>
+		<SimpleData name="YR2007">186155</SimpleData>
+		<SimpleData name="YR2008">171393</SimpleData>
+		<SimpleData name="YR2009">141021</SimpleData>
+		<SimpleData name="YR2010">134858</SimpleData>
+		<SimpleData name="YR2011">128664</SimpleData>
+		<SimpleData name="YR2012">19258</SimpleData>
+		<SimpleData name="YR2013">10297</SimpleData>
+		<SimpleData name="YR2014">9484</SimpleData>
+		<SimpleData name="YR2015">11869</SimpleData>
+		<SimpleData name="latitude">-12.3335552</SimpleData>
+		<SimpleData name="longitude">17.539465</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.539465,-12.3335552</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Armenia</SimpleData>
+		<SimpleData name="YR2000">5786</SimpleData>
+		<SimpleData name="YR2001">7207</SimpleData>
+		<SimpleData name="YR2002">13249</SimpleData>
+		<SimpleData name="YR2003">13162</SimpleData>
+		<SimpleData name="YR2004">13424</SimpleData>
+		<SimpleData name="YR2005">13965</SimpleData>
+		<SimpleData name="YR2006">14918</SimpleData>
+		<SimpleData name="YR2007">15436</SimpleData>
+		<SimpleData name="YR2008">16336</SimpleData>
+		<SimpleData name="YR2009">18000</SimpleData>
+		<SimpleData name="YR2010">17547</SimpleData>
+		<SimpleData name="YR2011">16487</SimpleData>
+		<SimpleData name="YR2012">15935</SimpleData>
+		<SimpleData name="YR2013">12021</SimpleData>
+		<SimpleData name="YR2014">11848</SimpleData>
+		<SimpleData name="YR2015">11218</SimpleData>
+		<SimpleData name="latitude">40.2926636</SimpleData>
+		<SimpleData name="longitude">44.9394722</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.9394722,40.2926636</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Azerbaijan</SimpleData>
+		<SimpleData name="YR2000">284277</SimpleData>
+		<SimpleData name="YR2001">268759</SimpleData>
+		<SimpleData name="YR2002">260214</SimpleData>
+		<SimpleData name="YR2003">253255</SimpleData>
+		<SimpleData name="YR2004">250583</SimpleData>
+		<SimpleData name="YR2005">233675</SimpleData>
+		<SimpleData name="YR2006">126068</SimpleData>
+		<SimpleData name="YR2007">15916</SimpleData>
+		<SimpleData name="YR2008">16319</SimpleData>
+		<SimpleData name="YR2009">16939</SimpleData>
+		<SimpleData name="YR2010">16753</SimpleData>
+		<SimpleData name="YR2011">16162</SimpleData>
+		<SimpleData name="YR2012">15537</SimpleData>
+		<SimpleData name="YR2013">10813</SimpleData>
+		<SimpleData name="YR2014">10515</SimpleData>
+		<SimpleData name="YR2015">9712</SimpleData>
+		<SimpleData name="latitude">40.3310051</SimpleData>
+		<SimpleData name="longitude">47.8082008</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>47.8082008,40.3310051</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Bangladesh</SimpleData>
+		<SimpleData name="YR2000">5401</SimpleData>
+		<SimpleData name="YR2001">5548</SimpleData>
+		<SimpleData name="YR2002">5808</SimpleData>
+		<SimpleData name="YR2003">5565</SimpleData>
+		<SimpleData name="YR2004">5731</SimpleData>
+		<SimpleData name="YR2005">7304</SimpleData>
+		<SimpleData name="YR2006">7803</SimpleData>
+		<SimpleData name="YR2007">10243</SimpleData>
+		<SimpleData name="YR2008">10098</SimpleData>
+		<SimpleData name="YR2009">10432</SimpleData>
+		<SimpleData name="YR2010">10049</SimpleData>
+		<SimpleData name="YR2011">10056</SimpleData>
+		<SimpleData name="YR2012">10161</SimpleData>
+		<SimpleData name="YR2013">9839</SimpleData>
+		<SimpleData name="YR2014">10883</SimpleData>
+		<SimpleData name="YR2015">12173</SimpleData>
+		<SimpleData name="latitude">23.7301044</SimpleData>
+		<SimpleData name="longitude">90.3065262</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>90.3065262,23.7301044</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Bhutan</SimpleData>
+		<SimpleData name="YR2000">108945</SimpleData>
+		<SimpleData name="YR2001">110845</SimpleData>
+		<SimpleData name="YR2002">112523</SimpleData>
+		<SimpleData name="YR2003">103978</SimpleData>
+		<SimpleData name="YR2004">105255</SimpleData>
+		<SimpleData name="YR2005">106537</SimpleData>
+		<SimpleData name="YR2006">108073</SimpleData>
+		<SimpleData name="YR2007">110598</SimpleData>
+		<SimpleData name="YR2008">104965</SimpleData>
+		<SimpleData name="YR2009">89070</SimpleData>
+		<SimpleData name="YR2010">75070</SimpleData>
+		<SimpleData name="YR2011">57989</SimpleData>
+		<SimpleData name="YR2012">41590</SimpleData>
+		<SimpleData name="YR2013">31567</SimpleData>
+		<SimpleData name="YR2014">23642</SimpleData>
+		<SimpleData name="YR2015">17720</SimpleData>
+		<SimpleData name="latitude">27.4168797</SimpleData>
+		<SimpleData name="longitude">90.434761</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>90.434761,27.4168797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Bosnia and Herzegovina</SimpleData>
+		<SimpleData name="YR2000">504981</SimpleData>
+		<SimpleData name="YR2001">447321</SimpleData>
+		<SimpleData name="YR2002">406448</SimpleData>
+		<SimpleData name="YR2003">300006</SimpleData>
+		<SimpleData name="YR2004">228831</SimpleData>
+		<SimpleData name="YR2005">109930</SimpleData>
+		<SimpleData name="YR2006">199946</SimpleData>
+		<SimpleData name="YR2007">78273</SimpleData>
+		<SimpleData name="YR2008">74366</SimpleData>
+		<SimpleData name="YR2009">70018</SimpleData>
+		<SimpleData name="YR2010">63004</SimpleData>
+		<SimpleData name="YR2011">58578</SimpleData>
+		<SimpleData name="YR2012">51822</SimpleData>
+		<SimpleData name="YR2013">26811</SimpleData>
+		<SimpleData name="YR2014">21888</SimpleData>
+		<SimpleData name="YR2015">18769</SimpleData>
+		<SimpleData name="latitude">44.1653328</SimpleData>
+		<SimpleData name="longitude">17.7902412</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.7902412,44.1653328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Burundi</SimpleData>
+		<SimpleData name="YR2000">568084</SimpleData>
+		<SimpleData name="YR2001">553999</SimpleData>
+		<SimpleData name="YR2002">574557</SimpleData>
+		<SimpleData name="YR2003">531637</SimpleData>
+		<SimpleData name="YR2004">485773</SimpleData>
+		<SimpleData name="YR2005">438706</SimpleData>
+		<SimpleData name="YR2006">396541</SimpleData>
+		<SimpleData name="YR2007">375727</SimpleData>
+		<SimpleData name="YR2008">281592</SimpleData>
+		<SimpleData name="YR2009">94239</SimpleData>
+		<SimpleData name="YR2010">84064</SimpleData>
+		<SimpleData name="YR2011">101288</SimpleData>
+		<SimpleData name="YR2012">73363</SimpleData>
+		<SimpleData name="YR2013">72652</SimpleData>
+		<SimpleData name="YR2014">72493</SimpleData>
+		<SimpleData name="YR2015">292764</SimpleData>
+		<SimpleData name="latitude">-3.3652081</SimpleData>
+		<SimpleData name="longitude">29.8865089</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>29.8865089,-3.3652081</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Cambodia</SimpleData>
+		<SimpleData name="YR2000">36855</SimpleData>
+		<SimpleData name="YR2001">34759</SimpleData>
+		<SimpleData name="YR2002">33456</SimpleData>
+		<SimpleData name="YR2003">31407</SimpleData>
+		<SimpleData name="YR2004">18121</SimpleData>
+		<SimpleData name="YR2005">17806</SimpleData>
+		<SimpleData name="YR2006">17965</SimpleData>
+		<SimpleData name="YR2007">17704</SimpleData>
+		<SimpleData name="YR2008">17253</SimpleData>
+		<SimpleData name="YR2009">17025</SimpleData>
+		<SimpleData name="YR2010">16314</SimpleData>
+		<SimpleData name="YR2011">15205</SimpleData>
+		<SimpleData name="YR2012">14024</SimpleData>
+		<SimpleData name="YR2013">13748</SimpleData>
+		<SimpleData name="YR2014">13071</SimpleData>
+		<SimpleData name="YR2015">12803</SimpleData>
+		<SimpleData name="latitude">12.5704231</SimpleData>
+		<SimpleData name="longitude">104.8139114</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>104.8139114,12.5704231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Cameroon</SimpleData>
+		<SimpleData name="YR2000">2062</SimpleData>
+		<SimpleData name="YR2001">2724</SimpleData>
+		<SimpleData name="YR2002">5225</SimpleData>
+		<SimpleData name="YR2003">6206</SimpleData>
+		<SimpleData name="YR2004">7629</SimpleData>
+		<SimpleData name="YR2005">9101</SimpleData>
+		<SimpleData name="YR2006">10384</SimpleData>
+		<SimpleData name="YR2007">11508</SimpleData>
+		<SimpleData name="YR2008">13870</SimpleData>
+		<SimpleData name="YR2009">14766</SimpleData>
+		<SimpleData name="YR2010">14963</SimpleData>
+		<SimpleData name="YR2011">15163</SimpleData>
+		<SimpleData name="YR2012">13382</SimpleData>
+		<SimpleData name="YR2013">11442</SimpleData>
+		<SimpleData name="YR2014">10766</SimpleData>
+		<SimpleData name="YR2015">10581</SimpleData>
+		<SimpleData name="latitude">5.6854768</SimpleData>
+		<SimpleData name="longitude">12.7228775</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>12.7228775,5.6854768</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Central African Republic</SimpleData>
+		<SimpleData name="YR2000">139</SimpleData>
+		<SimpleData name="YR2001">28704</SimpleData>
+		<SimpleData name="YR2002">25376</SimpleData>
+		<SimpleData name="YR2003">35400</SimpleData>
+		<SimpleData name="YR2004">31069</SimpleData>
+		<SimpleData name="YR2005">42890</SimpleData>
+		<SimpleData name="YR2006">71685</SimpleData>
+		<SimpleData name="YR2007">98104</SimpleData>
+		<SimpleData name="YR2008">125106</SimpleData>
+		<SimpleData name="YR2009">159554</SimpleData>
+		<SimpleData name="YR2010">164905</SimpleData>
+		<SimpleData name="YR2011">162862</SimpleData>
+		<SimpleData name="YR2012">164568</SimpleData>
+		<SimpleData name="YR2013">252865</SimpleData>
+		<SimpleData name="YR2014">412041</SimpleData>
+		<SimpleData name="YR2015">471104</SimpleData>
+		<SimpleData name="latitude">6.5741234</SimpleData>
+		<SimpleData name="longitude">20.4869232</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.4869232,6.5741234</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Chad</SimpleData>
+		<SimpleData name="YR2000">54962</SimpleData>
+		<SimpleData name="YR2001">46294</SimpleData>
+		<SimpleData name="YR2002">47349</SimpleData>
+		<SimpleData name="YR2003">52275</SimpleData>
+		<SimpleData name="YR2004">52663</SimpleData>
+		<SimpleData name="YR2005">48400</SimpleData>
+		<SimpleData name="YR2006">36300</SimpleData>
+		<SimpleData name="YR2007">55722</SimpleData>
+		<SimpleData name="YR2008">55105</SimpleData>
+		<SimpleData name="YR2009">55014</SimpleData>
+		<SimpleData name="YR2010">53733</SimpleData>
+		<SimpleData name="YR2011">42640</SimpleData>
+		<SimpleData name="YR2012">39694</SimpleData>
+		<SimpleData name="YR2013">48644</SimpleData>
+		<SimpleData name="YR2014">48258</SimpleData>
+		<SimpleData name="YR2015">14940</SimpleData>
+		<SimpleData name="latitude">15.3676529</SimpleData>
+		<SimpleData name="longitude">18.6675816</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.6675816,15.3676529</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">China</SimpleData>
+		<SimpleData name="YR2000">110975</SimpleData>
+		<SimpleData name="YR2001">117409</SimpleData>
+		<SimpleData name="YR2002">132115</SimpleData>
+		<SimpleData name="YR2003">132406</SimpleData>
+		<SimpleData name="YR2004">134724</SimpleData>
+		<SimpleData name="YR2005">124101</SimpleData>
+		<SimpleData name="YR2006">140598</SimpleData>
+		<SimpleData name="YR2007">149095</SimpleData>
+		<SimpleData name="YR2008">175180</SimpleData>
+		<SimpleData name="YR2009">180558</SimpleData>
+		<SimpleData name="YR2010">184602</SimpleData>
+		<SimpleData name="YR2011">190369</SimpleData>
+		<SimpleData name="YR2012">193453</SimpleData>
+		<SimpleData name="YR2013">195137</SimpleData>
+		<SimpleData name="YR2014">210802</SimpleData>
+		<SimpleData name="YR2015">212911</SimpleData>
+		<SimpleData name="latitude">36.5530853</SimpleData>
+		<SimpleData name="longitude">103.9754333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>103.9754333,36.5530853</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Colombia</SimpleData>
+		<SimpleData name="YR2000">9279</SimpleData>
+		<SimpleData name="YR2001">17938</SimpleData>
+		<SimpleData name="YR2002">30625</SimpleData>
+		<SimpleData name="YR2003">37995</SimpleData>
+		<SimpleData name="YR2004">47381</SimpleData>
+		<SimpleData name="YR2005">60450</SimpleData>
+		<SimpleData name="YR2006">72796</SimpleData>
+		<SimpleData name="YR2007">551744</SimpleData>
+		<SimpleData name="YR2008">373532</SimpleData>
+		<SimpleData name="YR2009">389753</SimpleData>
+		<SimpleData name="YR2010">395577</SimpleData>
+		<SimpleData name="YR2011">395949</SimpleData>
+		<SimpleData name="YR2012">394117</SimpleData>
+		<SimpleData name="YR2013">396635</SimpleData>
+		<SimpleData name="YR2014">360298</SimpleData>
+		<SimpleData name="YR2015">340240</SimpleData>
+		<SimpleData name="latitude">3.9976072</SimpleData>
+		<SimpleData name="longitude">-73.2779694</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.2779694,3.9976072</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Congo, Dem. Rep.</SimpleData>
+		<SimpleData name="YR2000">371713</SimpleData>
+		<SimpleData name="YR2001">392146</SimpleData>
+		<SimpleData name="YR2002">421362</SimpleData>
+		<SimpleData name="YR2003">453465</SimpleData>
+		<SimpleData name="YR2004">462208</SimpleData>
+		<SimpleData name="YR2005">430929</SimpleData>
+		<SimpleData name="YR2006">401914</SimpleData>
+		<SimpleData name="YR2007">370374</SimpleData>
+		<SimpleData name="YR2008">367995</SimpleData>
+		<SimpleData name="YR2009">455852</SimpleData>
+		<SimpleData name="YR2010">476693</SimpleData>
+		<SimpleData name="YR2011">491481</SimpleData>
+		<SimpleData name="YR2012">509290</SimpleData>
+		<SimpleData name="YR2013">499541</SimpleData>
+		<SimpleData name="YR2014">516771</SimpleData>
+		<SimpleData name="YR2015">541499</SimpleData>
+		<SimpleData name="latitude">-4.0383</SimpleData>
+		<SimpleData name="longitude">21.7587</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>21.7587,-4.0383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Congo, Rep.</SimpleData>
+		<SimpleData name="YR2000">27579</SimpleData>
+		<SimpleData name="YR2001">24237</SimpleData>
+		<SimpleData name="YR2002">28002</SimpleData>
+		<SimpleData name="YR2003">28958</SimpleData>
+		<SimpleData name="YR2004">28152</SimpleData>
+		<SimpleData name="YR2005">24438</SimpleData>
+		<SimpleData name="YR2006">20609</SimpleData>
+		<SimpleData name="YR2007">19735</SimpleData>
+		<SimpleData name="YR2008">19925</SimpleData>
+		<SimpleData name="YR2009">20544</SimpleData>
+		<SimpleData name="YR2010">20679</SimpleData>
+		<SimpleData name="YR2011">12839</SimpleData>
+		<SimpleData name="YR2012">12119</SimpleData>
+		<SimpleData name="YR2013">11751</SimpleData>
+		<SimpleData name="YR2014">14500</SimpleData>
+		<SimpleData name="YR2015">14781</SimpleData>
+		<SimpleData name="latitude">-4.2634</SimpleData>
+		<SimpleData name="longitude">15.2429</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.2429,-4.2634</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Cote d'Ivoire</SimpleData>
+		<SimpleData name="YR2000">773</SimpleData>
+		<SimpleData name="YR2001">858</SimpleData>
+		<SimpleData name="YR2002">23741</SimpleData>
+		<SimpleData name="YR2003">33637</SimpleData>
+		<SimpleData name="YR2004">23655</SimpleData>
+		<SimpleData name="YR2005">18338</SimpleData>
+		<SimpleData name="YR2006">26315</SimpleData>
+		<SimpleData name="YR2007">22232</SimpleData>
+		<SimpleData name="YR2008">22227</SimpleData>
+		<SimpleData name="YR2009">23153</SimpleData>
+		<SimpleData name="YR2010">41758</SimpleData>
+		<SimpleData name="YR2011">154824</SimpleData>
+		<SimpleData name="YR2012">100720</SimpleData>
+		<SimpleData name="YR2013">85729</SimpleData>
+		<SimpleData name="YR2014">71966</SimpleData>
+		<SimpleData name="YR2015">71105</SimpleData>
+		<SimpleData name="latitude">7.5987554</SimpleData>
+		<SimpleData name="longitude">-5.5525746</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.5525746,7.5987554</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Croatia</SimpleData>
+		<SimpleData name="YR2000">335199</SimpleData>
+		<SimpleData name="YR2001">290279</SimpleData>
+		<SimpleData name="YR2002">274818</SimpleData>
+		<SimpleData name="YR2003">230189</SimpleData>
+		<SimpleData name="YR2004">215475</SimpleData>
+		<SimpleData name="YR2005">119148</SimpleData>
+		<SimpleData name="YR2006">93767</SimpleData>
+		<SimpleData name="YR2007">100423</SimpleData>
+		<SimpleData name="YR2008">97012</SimpleData>
+		<SimpleData name="YR2009">76478</SimpleData>
+		<SimpleData name="YR2010">65861</SimpleData>
+		<SimpleData name="YR2011">62649</SimpleData>
+		<SimpleData name="YR2012">62606</SimpleData>
+		<SimpleData name="YR2013">49760</SimpleData>
+		<SimpleData name="YR2014">40122</SimpleData>
+		<SimpleData name="YR2015">33451</SimpleData>
+		<SimpleData name="latitude">45.4443054</SimpleData>
+		<SimpleData name="longitude">15.7345037</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.7345037,45.4443054</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Cuba</SimpleData>
+		<SimpleData name="YR2000">20084</SimpleData>
+		<SimpleData name="YR2001">18959</SimpleData>
+		<SimpleData name="YR2002">18043</SimpleData>
+		<SimpleData name="YR2003">16093</SimpleData>
+		<SimpleData name="YR2004">15659</SimpleData>
+		<SimpleData name="YR2005">19000</SimpleData>
+		<SimpleData name="YR2006">33580</SimpleData>
+		<SimpleData name="YR2007">7503</SimpleData>
+		<SimpleData name="YR2008">7938</SimpleData>
+		<SimpleData name="YR2009">7549</SimpleData>
+		<SimpleData name="YR2010">7477</SimpleData>
+		<SimpleData name="YR2011">7856</SimpleData>
+		<SimpleData name="YR2012">7731</SimpleData>
+		<SimpleData name="YR2013">7428</SimpleData>
+		<SimpleData name="YR2014">7502</SimpleData>
+		<SimpleData name="YR2015">6862</SimpleData>
+		<SimpleData name="latitude">22.0663357</SimpleData>
+		<SimpleData name="longitude">-79.4531479</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.4531479,22.0663357</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Egypt, Arab Rep.</SimpleData>
+		<SimpleData name="YR2000">3953</SimpleData>
+		<SimpleData name="YR2001">4678</SimpleData>
+		<SimpleData name="YR2002">6443</SimpleData>
+		<SimpleData name="YR2003">5735</SimpleData>
+		<SimpleData name="YR2004">5376</SimpleData>
+		<SimpleData name="YR2005">6291</SimpleData>
+		<SimpleData name="YR2006">7613</SimpleData>
+		<SimpleData name="YR2007">6799</SimpleData>
+		<SimpleData name="YR2008">6780</SimpleData>
+		<SimpleData name="YR2009">6990</SimpleData>
+		<SimpleData name="YR2010">6913</SimpleData>
+		<SimpleData name="YR2011">7936</SimpleData>
+		<SimpleData name="YR2012">10020</SimpleData>
+		<SimpleData name="YR2013">12834</SimpleData>
+		<SimpleData name="YR2014">15903</SimpleData>
+		<SimpleData name="YR2015">17930</SimpleData>
+		<SimpleData name="latitude">26.8206</SimpleData>
+		<SimpleData name="longitude">30.8025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>30.8025,26.8206</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">El Salvador</SimpleData>
+		<SimpleData name="YR2000">7756</SimpleData>
+		<SimpleData name="YR2001">7150</SimpleData>
+		<SimpleData name="YR2002">6632</SimpleData>
+		<SimpleData name="YR2003">5658</SimpleData>
+		<SimpleData name="YR2004">4497</SimpleData>
+		<SimpleData name="YR2005">4281</SimpleData>
+		<SimpleData name="YR2006">6388</SimpleData>
+		<SimpleData name="YR2007">6022</SimpleData>
+		<SimpleData name="YR2008">5151</SimpleData>
+		<SimpleData name="YR2009">5051</SimpleData>
+		<SimpleData name="YR2010">4976</SimpleData>
+		<SimpleData name="YR2011">6720</SimpleData>
+		<SimpleData name="YR2012">8171</SimpleData>
+		<SimpleData name="YR2013">9638</SimpleData>
+		<SimpleData name="YR2014">10965</SimpleData>
+		<SimpleData name="YR2015">14778</SimpleData>
+		<SimpleData name="latitude">13.6716366</SimpleData>
+		<SimpleData name="longitude">-88.8636322</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-88.8636322,13.6716366</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Eritrea</SimpleData>
+		<SimpleData name="YR2000">376851</SimpleData>
+		<SimpleData name="YR2001">333229</SimpleData>
+		<SimpleData name="YR2002">318176</SimpleData>
+		<SimpleData name="YR2003">124121</SimpleData>
+		<SimpleData name="YR2004">131131</SimpleData>
+		<SimpleData name="YR2005">144066</SimpleData>
+		<SimpleData name="YR2006">193745</SimpleData>
+		<SimpleData name="YR2007">208748</SimpleData>
+		<SimpleData name="YR2008">186398</SimpleData>
+		<SimpleData name="YR2009">209168</SimpleData>
+		<SimpleData name="YR2010">222460</SimpleData>
+		<SimpleData name="YR2011">251954</SimpleData>
+		<SimpleData name="YR2012">285371</SimpleData>
+		<SimpleData name="YR2013">308022</SimpleData>
+		<SimpleData name="YR2014">363092</SimpleData>
+		<SimpleData name="YR2015">411342</SimpleData>
+		<SimpleData name="latitude">15.3971996</SimpleData>
+		<SimpleData name="longitude">39.0871887</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.0871887,15.3971996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Ethiopia</SimpleData>
+		<SimpleData name="YR2000">66410</SimpleData>
+		<SimpleData name="YR2001">58997</SimpleData>
+		<SimpleData name="YR2002">61240</SimpleData>
+		<SimpleData name="YR2003">62677</SimpleData>
+		<SimpleData name="YR2004">63150</SimpleData>
+		<SimpleData name="YR2005">65461</SimpleData>
+		<SimpleData name="YR2006">74026</SimpleData>
+		<SimpleData name="YR2007">59858</SimpleData>
+		<SimpleData name="YR2008">63878</SimpleData>
+		<SimpleData name="YR2009">62889</SimpleData>
+		<SimpleData name="YR2010">68848</SimpleData>
+		<SimpleData name="YR2011">70610</SimpleData>
+		<SimpleData name="YR2012">74968</SimpleData>
+		<SimpleData name="YR2013">77118</SimpleData>
+		<SimpleData name="YR2014">86870</SimpleData>
+		<SimpleData name="YR2015">85834</SimpleData>
+		<SimpleData name="latitude">8.6267033</SimpleData>
+		<SimpleData name="longitude">39.6375542</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6375542,8.6267033</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Gambia, The</SimpleData>
+		<SimpleData name="YR2000">750</SimpleData>
+		<SimpleData name="YR2001">734</SimpleData>
+		<SimpleData name="YR2002">861</SimpleData>
+		<SimpleData name="YR2003">746</SimpleData>
+		<SimpleData name="YR2004">684</SimpleData>
+		<SimpleData name="YR2005">1683</SimpleData>
+		<SimpleData name="YR2006">1254</SimpleData>
+		<SimpleData name="YR2007">1267</SimpleData>
+		<SimpleData name="YR2008">1352</SimpleData>
+		<SimpleData name="YR2009">1973</SimpleData>
+		<SimpleData name="YR2010">2242</SimpleData>
+		<SimpleData name="YR2011">2583</SimpleData>
+		<SimpleData name="YR2012">3076</SimpleData>
+		<SimpleData name="YR2013">3434</SimpleData>
+		<SimpleData name="YR2014">5136</SimpleData>
+		<SimpleData name="YR2015">8491</SimpleData>
+		<SimpleData name="latitude">13.4432</SimpleData>
+		<SimpleData name="longitude">-15.3101</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-15.3101,13.4432</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Georgia</SimpleData>
+		<SimpleData name="YR2000">21821</SimpleData>
+		<SimpleData name="YR2001">17498</SimpleData>
+		<SimpleData name="YR2002">16975</SimpleData>
+		<SimpleData name="YR2003">12497</SimpleData>
+		<SimpleData name="YR2004">6633</SimpleData>
+		<SimpleData name="YR2005">7301</SimpleData>
+		<SimpleData name="YR2006">6340</SimpleData>
+		<SimpleData name="YR2007">11810</SimpleData>
+		<SimpleData name="YR2008">12598</SimpleData>
+		<SimpleData name="YR2009">15020</SimpleData>
+		<SimpleData name="YR2010">10640</SimpleData>
+		<SimpleData name="YR2011">10112</SimpleData>
+		<SimpleData name="YR2012">9261</SimpleData>
+		<SimpleData name="YR2013">6772</SimpleData>
+		<SimpleData name="YR2014">6681</SimpleData>
+		<SimpleData name="YR2015">6498</SimpleData>
+		<SimpleData name="latitude">42.1810265</SimpleData>
+		<SimpleData name="longitude">43.5059509</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.5059509,42.1810265</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Ghana</SimpleData>
+		<SimpleData name="YR2000">14775</SimpleData>
+		<SimpleData name="YR2001">14556</SimpleData>
+		<SimpleData name="YR2002">15686</SimpleData>
+		<SimpleData name="YR2003">15879</SimpleData>
+		<SimpleData name="YR2004">14767</SimpleData>
+		<SimpleData name="YR2005">18433</SimpleData>
+		<SimpleData name="YR2006">9960</SimpleData>
+		<SimpleData name="YR2007">5063</SimpleData>
+		<SimpleData name="YR2008">13242</SimpleData>
+		<SimpleData name="YR2009">14893</SimpleData>
+		<SimpleData name="YR2010">20203</SimpleData>
+		<SimpleData name="YR2011">20361</SimpleData>
+		<SimpleData name="YR2012">24298</SimpleData>
+		<SimpleData name="YR2013">21378</SimpleData>
+		<SimpleData name="YR2014">22145</SimpleData>
+		<SimpleData name="YR2015">22978</SimpleData>
+		<SimpleData name="latitude">7.9213305</SimpleData>
+		<SimpleData name="longitude">-1.2043862</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.2043862,7.9213305</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Guatemala</SimpleData>
+		<SimpleData name="YR2000">20711</SimpleData>
+		<SimpleData name="YR2001">16867</SimpleData>
+		<SimpleData name="YR2002">13888</SimpleData>
+		<SimpleData name="YR2003">6696</SimpleData>
+		<SimpleData name="YR2004">4376</SimpleData>
+		<SimpleData name="YR2005">3379</SimpleData>
+		<SimpleData name="YR2006">6496</SimpleData>
+		<SimpleData name="YR2007">6161</SimpleData>
+		<SimpleData name="YR2008">5934</SimpleData>
+		<SimpleData name="YR2009">5768</SimpleData>
+		<SimpleData name="YR2010">5679</SimpleData>
+		<SimpleData name="YR2011">6088</SimpleData>
+		<SimpleData name="YR2012">6388</SimpleData>
+		<SimpleData name="YR2013">6615</SimpleData>
+		<SimpleData name="YR2014">7483</SimpleData>
+		<SimpleData name="YR2015">10284</SimpleData>
+		<SimpleData name="latitude">15.6705656</SimpleData>
+		<SimpleData name="longitude">-90.3486557</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-90.3486557,15.6705656</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Guinea</SimpleData>
+		<SimpleData name="YR2000">1497</SimpleData>
+		<SimpleData name="YR2001">2019</SimpleData>
+		<SimpleData name="YR2002">3418</SimpleData>
+		<SimpleData name="YR2003">3871</SimpleData>
+		<SimpleData name="YR2004">4782</SimpleData>
+		<SimpleData name="YR2005">5820</SimpleData>
+		<SimpleData name="YR2006">6840</SimpleData>
+		<SimpleData name="YR2007">8278</SimpleData>
+		<SimpleData name="YR2008">9495</SimpleData>
+		<SimpleData name="YR2009">10920</SimpleData>
+		<SimpleData name="YR2010">11985</SimpleData>
+		<SimpleData name="YR2011">13161</SimpleData>
+		<SimpleData name="YR2012">14061</SimpleData>
+		<SimpleData name="YR2013">14594</SimpleData>
+		<SimpleData name="YR2014">15252</SimpleData>
+		<SimpleData name="YR2015">17005</SimpleData>
+		<SimpleData name="latitude">10.4293022</SimpleData>
+		<SimpleData name="longitude">-10.9895496</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-10.9895496,10.4293022</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Haiti</SimpleData>
+		<SimpleData name="YR2000">7561</SimpleData>
+		<SimpleData name="YR2001">7248</SimpleData>
+		<SimpleData name="YR2002">7718</SimpleData>
+		<SimpleData name="YR2003">7547</SimpleData>
+		<SimpleData name="YR2004">9208</SimpleData>
+		<SimpleData name="YR2005">13542</SimpleData>
+		<SimpleData name="YR2006">20837</SimpleData>
+		<SimpleData name="YR2007">22280</SimpleData>
+		<SimpleData name="YR2008">23066</SimpleData>
+		<SimpleData name="YR2009">24116</SimpleData>
+		<SimpleData name="YR2010">25892</SimpleData>
+		<SimpleData name="YR2011">33661</SimpleData>
+		<SimpleData name="YR2012">38568</SimpleData>
+		<SimpleData name="YR2013">38660</SimpleData>
+		<SimpleData name="YR2014">37162</SimpleData>
+		<SimpleData name="YR2015">34774</SimpleData>
+		<SimpleData name="latitude">19.0732422</SimpleData>
+		<SimpleData name="longitude">-72.2412796</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.2412796,19.0732422</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Honduras</SimpleData>
+		<SimpleData name="YR2000">903</SimpleData>
+		<SimpleData name="YR2001">781</SimpleData>
+		<SimpleData name="YR2002">673</SimpleData>
+		<SimpleData name="YR2003">604</SimpleData>
+		<SimpleData name="YR2004">484</SimpleData>
+		<SimpleData name="YR2005">535</SimpleData>
+		<SimpleData name="YR2006">1035</SimpleData>
+		<SimpleData name="YR2007">1236</SimpleData>
+		<SimpleData name="YR2008">1116</SimpleData>
+		<SimpleData name="YR2009">1166</SimpleData>
+		<SimpleData name="YR2010">1302</SimpleData>
+		<SimpleData name="YR2011">1966</SimpleData>
+		<SimpleData name="YR2012">2613</SimpleData>
+		<SimpleData name="YR2013">3301</SimpleData>
+		<SimpleData name="YR2014">4159</SimpleData>
+		<SimpleData name="YR2015">6844</SimpleData>
+		<SimpleData name="latitude">14.9750328</SimpleData>
+		<SimpleData name="longitude">-86.2647705</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-86.2647705,14.9750328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">India</SimpleData>
+		<SimpleData name="YR2000">11399</SimpleData>
+		<SimpleData name="YR2001">11571</SimpleData>
+		<SimpleData name="YR2002">14349</SimpleData>
+		<SimpleData name="YR2003">13706</SimpleData>
+		<SimpleData name="YR2004">13345</SimpleData>
+		<SimpleData name="YR2005">16285</SimpleData>
+		<SimpleData name="YR2006">17811</SimpleData>
+		<SimpleData name="YR2007">20466</SimpleData>
+		<SimpleData name="YR2008">19569</SimpleData>
+		<SimpleData name="YR2009">19514</SimpleData>
+		<SimpleData name="YR2010">17769</SimpleData>
+		<SimpleData name="YR2011">16232</SimpleData>
+		<SimpleData name="YR2012">14258</SimpleData>
+		<SimpleData name="YR2013">11042</SimpleData>
+		<SimpleData name="YR2014">10436</SimpleData>
+		<SimpleData name="YR2015">9881</SimpleData>
+		<SimpleData name="latitude">23.4060116</SimpleData>
+		<SimpleData name="longitude">79.4580917</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>79.4580917,23.4060116</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Indonesia</SimpleData>
+		<SimpleData name="YR2000">9149</SimpleData>
+		<SimpleData name="YR2001">8970</SimpleData>
+		<SimpleData name="YR2002">9906</SimpleData>
+		<SimpleData name="YR2003">16240</SimpleData>
+		<SimpleData name="YR2004">27919</SimpleData>
+		<SimpleData name="YR2005">34384</SimpleData>
+		<SimpleData name="YR2006">34728</SimpleData>
+		<SimpleData name="YR2007">20558</SimpleData>
+		<SimpleData name="YR2008">19345</SimpleData>
+		<SimpleData name="YR2009">18213</SimpleData>
+		<SimpleData name="YR2010">16892</SimpleData>
+		<SimpleData name="YR2011">16079</SimpleData>
+		<SimpleData name="YR2012">15523</SimpleData>
+		<SimpleData name="YR2013">14786</SimpleData>
+		<SimpleData name="YR2014">14408</SimpleData>
+		<SimpleData name="YR2015">13956</SimpleData>
+		<SimpleData name="latitude">-1.2480891</SimpleData>
+		<SimpleData name="longitude">115.4189987</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>115.4189987,-1.2480891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Iran, Islamic Rep.</SimpleData>
+		<SimpleData name="YR2000">88278</SimpleData>
+		<SimpleData name="YR2001">92491</SimpleData>
+		<SimpleData name="YR2002">138364</SimpleData>
+		<SimpleData name="YR2003">122530</SimpleData>
+		<SimpleData name="YR2004">115162</SimpleData>
+		<SimpleData name="YR2005">99428</SimpleData>
+		<SimpleData name="YR2006">102483</SimpleData>
+		<SimpleData name="YR2007">68397</SimpleData>
+		<SimpleData name="YR2008">69061</SimpleData>
+		<SimpleData name="YR2009">72774</SimpleData>
+		<SimpleData name="YR2010">68791</SimpleData>
+		<SimpleData name="YR2011">72361</SimpleData>
+		<SimpleData name="YR2012">75940</SimpleData>
+		<SimpleData name="YR2013">75043</SimpleData>
+		<SimpleData name="YR2014">82191</SimpleData>
+		<SimpleData name="YR2015">84949</SimpleData>
+		<SimpleData name="latitude">32.4279</SimpleData>
+		<SimpleData name="longitude">53.688</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>53.688,32.4279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Iraq</SimpleData>
+		<SimpleData name="YR2000">526179</SimpleData>
+		<SimpleData name="YR2001">530511</SimpleData>
+		<SimpleData name="YR2002">422512</SimpleData>
+		<SimpleData name="YR2003">368580</SimpleData>
+		<SimpleData name="YR2004">311884</SimpleData>
+		<SimpleData name="YR2005">262299</SimpleData>
+		<SimpleData name="YR2006">1450905</SimpleData>
+		<SimpleData name="YR2007">2309245</SimpleData>
+		<SimpleData name="YR2008">1903519</SimpleData>
+		<SimpleData name="YR2009">1785212</SimpleData>
+		<SimpleData name="YR2010">1683579</SimpleData>
+		<SimpleData name="YR2011">1428308</SimpleData>
+		<SimpleData name="YR2012">746206</SimpleData>
+		<SimpleData name="YR2013">401417</SimpleData>
+		<SimpleData name="YR2014">369954</SimpleData>
+		<SimpleData name="YR2015">264107</SimpleData>
+		<SimpleData name="latitude">33.0445862</SimpleData>
+		<SimpleData name="longitude">43.7749557</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.7749557,33.0445862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Kenya</SimpleData>
+		<SimpleData name="YR2000">2373</SimpleData>
+		<SimpleData name="YR2001">2559</SimpleData>
+		<SimpleData name="YR2002">3098</SimpleData>
+		<SimpleData name="YR2003">3163</SimpleData>
+		<SimpleData name="YR2004">3847</SimpleData>
+		<SimpleData name="YR2005">4640</SimpleData>
+		<SimpleData name="YR2006">5356</SimpleData>
+		<SimpleData name="YR2007">7546</SimpleData>
+		<SimpleData name="YR2008">9688</SimpleData>
+		<SimpleData name="YR2009">9620</SimpleData>
+		<SimpleData name="YR2010">8602</SimpleData>
+		<SimpleData name="YR2011">8745</SimpleData>
+		<SimpleData name="YR2012">8950</SimpleData>
+		<SimpleData name="YR2013">8589</SimpleData>
+		<SimpleData name="YR2014">8553</SimpleData>
+		<SimpleData name="YR2015">7906</SimpleData>
+		<SimpleData name="latitude">0.5765032</SimpleData>
+		<SimpleData name="longitude">37.8398895</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.8398895,0.5765032</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Lao PDR</SimpleData>
+		<SimpleData name="YR2000">16094</SimpleData>
+		<SimpleData name="YR2001">12631</SimpleData>
+		<SimpleData name="YR2002">11235</SimpleData>
+		<SimpleData name="YR2003">10363</SimpleData>
+		<SimpleData name="YR2004">16114</SimpleData>
+		<SimpleData name="YR2005">24442</SimpleData>
+		<SimpleData name="YR2006">26447</SimpleData>
+		<SimpleData name="YR2007">10013</SimpleData>
+		<SimpleData name="YR2008">8598</SimpleData>
+		<SimpleData name="YR2009">8398</SimpleData>
+		<SimpleData name="YR2010">8414</SimpleData>
+		<SimpleData name="YR2011">8088</SimpleData>
+		<SimpleData name="YR2012">7984</SimpleData>
+		<SimpleData name="YR2013">7745</SimpleData>
+		<SimpleData name="YR2014">7482</SimpleData>
+		<SimpleData name="YR2015">7363</SimpleData>
+		<SimpleData name="latitude">18.6507492</SimpleData>
+		<SimpleData name="longitude">104.1529388</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>104.1529388,18.6507492</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Liberia</SimpleData>
+		<SimpleData name="YR2000">266930</SimpleData>
+		<SimpleData name="YR2001">244608</SimpleData>
+		<SimpleData name="YR2002">275422</SimpleData>
+		<SimpleData name="YR2003">353344</SimpleData>
+		<SimpleData name="YR2004">335467</SimpleData>
+		<SimpleData name="YR2005">231139</SimpleData>
+		<SimpleData name="YR2006">160548</SimpleData>
+		<SimpleData name="YR2007">91540</SimpleData>
+		<SimpleData name="YR2008">75213</SimpleData>
+		<SimpleData name="YR2009">71599</SimpleData>
+		<SimpleData name="YR2010">70129</SimpleData>
+		<SimpleData name="YR2011">66780</SimpleData>
+		<SimpleData name="YR2012">23428</SimpleData>
+		<SimpleData name="YR2013">17576</SimpleData>
+		<SimpleData name="YR2014">13572</SimpleData>
+		<SimpleData name="YR2015">9994</SimpleData>
+		<SimpleData name="latitude">6.4115129</SimpleData>
+		<SimpleData name="longitude">-9.3234921</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-9.3234921,6.4115129</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Libya</SimpleData>
+		<SimpleData name="YR2000">619</SimpleData>
+		<SimpleData name="YR2001">888</SimpleData>
+		<SimpleData name="YR2002">1456</SimpleData>
+		<SimpleData name="YR2003">1570</SimpleData>
+		<SimpleData name="YR2004">1720</SimpleData>
+		<SimpleData name="YR2005">1575</SimpleData>
+		<SimpleData name="YR2006">1573</SimpleData>
+		<SimpleData name="YR2007">1954</SimpleData>
+		<SimpleData name="YR2008">2084</SimpleData>
+		<SimpleData name="YR2009">2202</SimpleData>
+		<SimpleData name="YR2010">2309</SimpleData>
+		<SimpleData name="YR2011">4384</SimpleData>
+		<SimpleData name="YR2012">5251</SimpleData>
+		<SimpleData name="YR2013">3322</SimpleData>
+		<SimpleData name="YR2014">4203</SimpleData>
+		<SimpleData name="YR2015">6085</SimpleData>
+		<SimpleData name="latitude">27.2360973</SimpleData>
+		<SimpleData name="longitude">18.0435562</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.0435562,27.2360973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Mali</SimpleData>
+		<SimpleData name="YR2000">364</SimpleData>
+		<SimpleData name="YR2001">311</SimpleData>
+		<SimpleData name="YR2002">531</SimpleData>
+		<SimpleData name="YR2003">461</SimpleData>
+		<SimpleData name="YR2004">483</SimpleData>
+		<SimpleData name="YR2005">520</SimpleData>
+		<SimpleData name="YR2006">594</SimpleData>
+		<SimpleData name="YR2007">4494</SimpleData>
+		<SimpleData name="YR2008">1758</SimpleData>
+		<SimpleData name="YR2009">2926</SimpleData>
+		<SimpleData name="YR2010">3663</SimpleData>
+		<SimpleData name="YR2011">4295</SimpleData>
+		<SimpleData name="YR2012">149943</SimpleData>
+		<SimpleData name="YR2013">152864</SimpleData>
+		<SimpleData name="YR2014">139267</SimpleData>
+		<SimpleData name="YR2015">154211</SimpleData>
+		<SimpleData name="latitude">17.3577671</SimpleData>
+		<SimpleData name="longitude">-3.5273819</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-3.5273819,17.3577671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Mauritania</SimpleData>
+		<SimpleData name="YR2000">29752</SimpleData>
+		<SimpleData name="YR2001">29862</SimpleData>
+		<SimpleData name="YR2002">30137</SimpleData>
+		<SimpleData name="YR2003">30525</SimpleData>
+		<SimpleData name="YR2004">31131</SimpleData>
+		<SimpleData name="YR2005">31651</SimpleData>
+		<SimpleData name="YR2006">33428</SimpleData>
+		<SimpleData name="YR2007">33108</SimpleData>
+		<SimpleData name="YR2008">45601</SimpleData>
+		<SimpleData name="YR2009">39143</SimpleData>
+		<SimpleData name="YR2010">37733</SimpleData>
+		<SimpleData name="YR2011">39929</SimpleData>
+		<SimpleData name="YR2012">33765</SimpleData>
+		<SimpleData name="YR2013">34257</SimpleData>
+		<SimpleData name="YR2014">34113</SimpleData>
+		<SimpleData name="YR2015">34664</SimpleData>
+		<SimpleData name="latitude">20.2589951</SimpleData>
+		<SimpleData name="longitude">-10.3644371</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-10.3644371,20.2589951</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Mexico</SimpleData>
+		<SimpleData name="YR2000">1291</SimpleData>
+		<SimpleData name="YR2001">1594</SimpleData>
+		<SimpleData name="YR2002">1670</SimpleData>
+		<SimpleData name="YR2003">1652</SimpleData>
+		<SimpleData name="YR2004">1744</SimpleData>
+		<SimpleData name="YR2005">2313</SimpleData>
+		<SimpleData name="YR2006">3304</SimpleData>
+		<SimpleData name="YR2007">5572</SimpleData>
+		<SimpleData name="YR2008">6162</SimpleData>
+		<SimpleData name="YR2009">6435</SimpleData>
+		<SimpleData name="YR2010">6816</SimpleData>
+		<SimpleData name="YR2011">7472</SimpleData>
+		<SimpleData name="YR2012">8435</SimpleData>
+		<SimpleData name="YR2013">9396</SimpleData>
+		<SimpleData name="YR2014">10666</SimpleData>
+		<SimpleData name="YR2015">11333</SimpleData>
+		<SimpleData name="latitude">23.9090939</SimpleData>
+		<SimpleData name="longitude">-102.6334</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-102.6334,23.9090939</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Myanmar</SimpleData>
+		<SimpleData name="YR2000">137128</SimpleData>
+		<SimpleData name="YR2001">145856</SimpleData>
+		<SimpleData name="YR2002">148501</SimpleData>
+		<SimpleData name="YR2003">151384</SimpleData>
+		<SimpleData name="YR2004">161013</SimpleData>
+		<SimpleData name="YR2005">164864</SimpleData>
+		<SimpleData name="YR2006">202826</SimpleData>
+		<SimpleData name="YR2007">191313</SimpleData>
+		<SimpleData name="YR2008">184413</SimpleData>
+		<SimpleData name="YR2009">406669</SimpleData>
+		<SimpleData name="YR2010">415670</SimpleData>
+		<SimpleData name="YR2011">414626</SimpleData>
+		<SimpleData name="YR2012">415371</SimpleData>
+		<SimpleData name="YR2013">479608</SimpleData>
+		<SimpleData name="YR2014">479006</SimpleData>
+		<SimpleData name="YR2015">451807</SimpleData>
+		<SimpleData name="latitude">20.330143</SimpleData>
+		<SimpleData name="longitude">96.5218201</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>96.5218201,20.330143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Nepal</SimpleData>
+		<SimpleData name="YR2000">235</SimpleData>
+		<SimpleData name="YR2001">306</SimpleData>
+		<SimpleData name="YR2002">902</SimpleData>
+		<SimpleData name="YR2003">1231</SimpleData>
+		<SimpleData name="YR2004">1416</SimpleData>
+		<SimpleData name="YR2005">2065</SimpleData>
+		<SimpleData name="YR2006">2647</SimpleData>
+		<SimpleData name="YR2007">3364</SimpleData>
+		<SimpleData name="YR2008">4189</SimpleData>
+		<SimpleData name="YR2009">5108</SimpleData>
+		<SimpleData name="YR2010">5889</SimpleData>
+		<SimpleData name="YR2011">6854</SimpleData>
+		<SimpleData name="YR2012">7612</SimpleData>
+		<SimpleData name="YR2013">8112</SimpleData>
+		<SimpleData name="YR2014">8563</SimpleData>
+		<SimpleData name="YR2015">8866</SimpleData>
+		<SimpleData name="latitude">28.2591381</SimpleData>
+		<SimpleData name="longitude">83.9441605</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>83.9441605,28.2591381</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Nigeria</SimpleData>
+		<SimpleData name="YR2000">5742</SimpleData>
+		<SimpleData name="YR2001">6084</SimpleData>
+		<SimpleData name="YR2002">24572</SimpleData>
+		<SimpleData name="YR2003">24428</SimpleData>
+		<SimpleData name="YR2004">23892</SimpleData>
+		<SimpleData name="YR2005">22128</SimpleData>
+		<SimpleData name="YR2006">13253</SimpleData>
+		<SimpleData name="YR2007">13904</SimpleData>
+		<SimpleData name="YR2008">14169</SimpleData>
+		<SimpleData name="YR2009">15609</SimpleData>
+		<SimpleData name="YR2010">15642</SimpleData>
+		<SimpleData name="YR2011">17141</SimpleData>
+		<SimpleData name="YR2012">18021</SimpleData>
+		<SimpleData name="YR2013">31664</SimpleData>
+		<SimpleData name="YR2014">90947</SimpleData>
+		<SimpleData name="YR2015">167988</SimpleData>
+		<SimpleData name="latitude">9.5595055</SimpleData>
+		<SimpleData name="longitude">8.0778809</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>8.0778809,9.5595055</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Pakistan</SimpleData>
+		<SimpleData name="YR2000">10133</SimpleData>
+		<SimpleData name="YR2001">12324</SimpleData>
+		<SimpleData name="YR2002">23163</SimpleData>
+		<SimpleData name="YR2003">24389</SimpleData>
+		<SimpleData name="YR2004">25949</SimpleData>
+		<SimpleData name="YR2005">29913</SimpleData>
+		<SimpleData name="YR2006">25639</SimpleData>
+		<SimpleData name="YR2007">31858</SimpleData>
+		<SimpleData name="YR2008">32403</SimpleData>
+		<SimpleData name="YR2009">35132</SimpleData>
+		<SimpleData name="YR2010">39982</SimpleData>
+		<SimpleData name="YR2011">35952</SimpleData>
+		<SimpleData name="YR2012">49785</SimpleData>
+		<SimpleData name="YR2013">48867</SimpleData>
+		<SimpleData name="YR2014">335961</SimpleData>
+		<SimpleData name="YR2015">297835</SimpleData>
+		<SimpleData name="latitude">29.9232197</SimpleData>
+		<SimpleData name="longitude">69.3577423</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>69.3577423,29.9232197</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Russian Federation</SimpleData>
+		<SimpleData name="YR2000">40310</SimpleData>
+		<SimpleData name="YR2001">45156</SimpleData>
+		<SimpleData name="YR2002">91626</SimpleData>
+		<SimpleData name="YR2003">96420</SimpleData>
+		<SimpleData name="YR2004">107975</SimpleData>
+		<SimpleData name="YR2005">103037</SimpleData>
+		<SimpleData name="YR2006">159381</SimpleData>
+		<SimpleData name="YR2007">93224</SimpleData>
+		<SimpleData name="YR2008">103061</SimpleData>
+		<SimpleData name="YR2009">109455</SimpleData>
+		<SimpleData name="YR2010">111948</SimpleData>
+		<SimpleData name="YR2011">109785</SimpleData>
+		<SimpleData name="YR2012">110588</SimpleData>
+		<SimpleData name="YR2013">74357</SimpleData>
+		<SimpleData name="YR2014">70562</SimpleData>
+		<SimpleData name="YR2015">67050</SimpleData>
+		<SimpleData name="latitude">63.1251869</SimpleData>
+		<SimpleData name="longitude">103.7539825</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>103.7539825,63.1251869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Rwanda</SimpleData>
+		<SimpleData name="YR2000">119056</SimpleData>
+		<SimpleData name="YR2001">84513</SimpleData>
+		<SimpleData name="YR2002">75257</SimpleData>
+		<SimpleData name="YR2003">75263</SimpleData>
+		<SimpleData name="YR2004">63812</SimpleData>
+		<SimpleData name="YR2005">100264</SimpleData>
+		<SimpleData name="YR2006">92966</SimpleData>
+		<SimpleData name="YR2007">80964</SimpleData>
+		<SimpleData name="YR2008">72530</SimpleData>
+		<SimpleData name="YR2009">129109</SimpleData>
+		<SimpleData name="YR2010">115524</SimpleData>
+		<SimpleData name="YR2011">106833</SimpleData>
+		<SimpleData name="YR2012">97373</SimpleData>
+		<SimpleData name="YR2013">83937</SimpleData>
+		<SimpleData name="YR2014">79408</SimpleData>
+		<SimpleData name="YR2015">286366</SimpleData>
+		<SimpleData name="latitude">-1.9999498</SimpleData>
+		<SimpleData name="longitude">29.9260578</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>29.9260578,-1.9999498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Senegal</SimpleData>
+		<SimpleData name="YR2000">11088</SimpleData>
+		<SimpleData name="YR2001">8559</SimpleData>
+		<SimpleData name="YR2002">12069</SimpleData>
+		<SimpleData name="YR2003">8351</SimpleData>
+		<SimpleData name="YR2004">8332</SimpleData>
+		<SimpleData name="YR2005">8671</SimpleData>
+		<SimpleData name="YR2006">15163</SimpleData>
+		<SimpleData name="YR2007">15896</SimpleData>
+		<SimpleData name="YR2008">16006</SimpleData>
+		<SimpleData name="YR2009">16305</SimpleData>
+		<SimpleData name="YR2010">16267</SimpleData>
+		<SimpleData name="YR2011">17722</SimpleData>
+		<SimpleData name="YR2012">18724</SimpleData>
+		<SimpleData name="YR2013">19884</SimpleData>
+		<SimpleData name="YR2014">23118</SimpleData>
+		<SimpleData name="YR2015">21280</SimpleData>
+		<SimpleData name="latitude">14.3625116</SimpleData>
+		<SimpleData name="longitude">-14.5316439</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-14.5316439,14.3625116</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Serbia</SimpleData>
+		<SimpleData name="YR2000">146748</SimpleData>
+		<SimpleData name="YR2001">144231</SimpleData>
+		<SimpleData name="YR2002">327587</SimpleData>
+		<SimpleData name="YR2003">296632</SimpleData>
+		<SimpleData name="YR2004">236999</SimpleData>
+		<SimpleData name="YR2005">189989</SimpleData>
+		<SimpleData name="YR2006">174027</SimpleData>
+		<SimpleData name="YR2007">165643</SimpleData>
+		<SimpleData name="YR2008">185935</SimpleData>
+		<SimpleData name="YR2009">195626</SimpleData>
+		<SimpleData name="YR2010">183289</SimpleData>
+		<SimpleData name="YR2011">161671</SimpleData>
+		<SimpleData name="YR2012">158908</SimpleData>
+		<SimpleData name="YR2013">48693</SimpleData>
+		<SimpleData name="YR2014">45733</SimpleData>
+		<SimpleData name="YR2015">38637</SimpleData>
+		<SimpleData name="latitude">44.2329712</SimpleData>
+		<SimpleData name="longitude">20.7979584</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.7979584,44.2329712</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Sierra Leone</SimpleData>
+		<SimpleData name="YR2000">402807</SimpleData>
+		<SimpleData name="YR2001">179113</SimpleData>
+		<SimpleData name="YR2002">141475</SimpleData>
+		<SimpleData name="YR2003">70580</SimpleData>
+		<SimpleData name="YR2004">41802</SimpleData>
+		<SimpleData name="YR2005">40477</SimpleData>
+		<SimpleData name="YR2006">42863</SimpleData>
+		<SimpleData name="YR2007">32127</SimpleData>
+		<SimpleData name="YR2008">32536</SimpleData>
+		<SimpleData name="YR2009">15417</SimpleData>
+		<SimpleData name="YR2010">11275</SimpleData>
+		<SimpleData name="YR2011">8002</SimpleData>
+		<SimpleData name="YR2012">6202</SimpleData>
+		<SimpleData name="YR2013">5320</SimpleData>
+		<SimpleData name="YR2014">4993</SimpleData>
+		<SimpleData name="YR2015">4895</SimpleData>
+		<SimpleData name="latitude">8.5214415</SimpleData>
+		<SimpleData name="longitude">-11.8438902</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-11.8438902,8.5214415</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Somalia</SimpleData>
+		<SimpleData name="YR2000">475655</SimpleData>
+		<SimpleData name="YR2001">440134</SimpleData>
+		<SimpleData name="YR2002">432316</SimpleData>
+		<SimpleData name="YR2003">402336</SimpleData>
+		<SimpleData name="YR2004">389314</SimpleData>
+		<SimpleData name="YR2005">395553</SimpleData>
+		<SimpleData name="YR2006">464038</SimpleData>
+		<SimpleData name="YR2007">457356</SimpleData>
+		<SimpleData name="YR2008">561155</SimpleData>
+		<SimpleData name="YR2009">678309</SimpleData>
+		<SimpleData name="YR2010">770154</SimpleData>
+		<SimpleData name="YR2011">1077048</SimpleData>
+		<SimpleData name="YR2012">1136719</SimpleData>
+		<SimpleData name="YR2013">1121738</SimpleData>
+		<SimpleData name="YR2014">1106434</SimpleData>
+		<SimpleData name="YR2015">1123052</SimpleData>
+		<SimpleData name="latitude">5.9482675</SimpleData>
+		<SimpleData name="longitude">47.4736061</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>47.4736061,5.9482675</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">South Sudan</SimpleData>
+		<SimpleData name="YR2000">NULL</SimpleData>
+		<SimpleData name="YR2001">NULL</SimpleData>
+		<SimpleData name="YR2002">NULL</SimpleData>
+		<SimpleData name="YR2003">NULL</SimpleData>
+		<SimpleData name="YR2004">NULL</SimpleData>
+		<SimpleData name="YR2005">NULL</SimpleData>
+		<SimpleData name="YR2006">NULL</SimpleData>
+		<SimpleData name="YR2007">NULL</SimpleData>
+		<SimpleData name="YR2008">NULL</SimpleData>
+		<SimpleData name="YR2009">NULL</SimpleData>
+		<SimpleData name="YR2010">NULL</SimpleData>
+		<SimpleData name="YR2011">1</SimpleData>
+		<SimpleData name="YR2012">87009</SimpleData>
+		<SimpleData name="YR2013">114467</SimpleData>
+		<SimpleData name="YR2014">616211</SimpleData>
+		<SimpleData name="YR2015">778697</SimpleData>
+		<SimpleData name="latitude">7.3038583</SimpleData>
+		<SimpleData name="longitude">30.2807522</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>30.2807522,7.3038583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Sri Lanka</SimpleData>
+		<SimpleData name="YR2000">124160</SimpleData>
+		<SimpleData name="YR2001">122420</SimpleData>
+		<SimpleData name="YR2002">133239</SimpleData>
+		<SimpleData name="YR2003">122010</SimpleData>
+		<SimpleData name="YR2004">114050</SimpleData>
+		<SimpleData name="YR2005">108139</SimpleData>
+		<SimpleData name="YR2006">116966</SimpleData>
+		<SimpleData name="YR2007">134952</SimpleData>
+		<SimpleData name="YR2008">137752</SimpleData>
+		<SimpleData name="YR2009">145721</SimpleData>
+		<SimpleData name="YR2010">141074</SimpleData>
+		<SimpleData name="YR2011">136617</SimpleData>
+		<SimpleData name="YR2012">132731</SimpleData>
+		<SimpleData name="YR2013">123088</SimpleData>
+		<SimpleData name="YR2014">122010</SimpleData>
+		<SimpleData name="YR2015">121435</SimpleData>
+		<SimpleData name="latitude">7.7891335</SimpleData>
+		<SimpleData name="longitude">80.6807251</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>80.6807251,7.7891335</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Sudan</SimpleData>
+		<SimpleData name="YR2000">494363</SimpleData>
+		<SimpleData name="YR2001">489950</SimpleData>
+		<SimpleData name="YR2002">508877</SimpleData>
+		<SimpleData name="YR2003">606242</SimpleData>
+		<SimpleData name="YR2004">730650</SimpleData>
+		<SimpleData name="YR2005">693632</SimpleData>
+		<SimpleData name="YR2006">686311</SimpleData>
+		<SimpleData name="YR2007">523032</SimpleData>
+		<SimpleData name="YR2008">419248</SimpleData>
+		<SimpleData name="YR2009">368195</SimpleData>
+		<SimpleData name="YR2010">387288</SimpleData>
+		<SimpleData name="YR2011">500014</SimpleData>
+		<SimpleData name="YR2012">568943</SimpleData>
+		<SimpleData name="YR2013">649331</SimpleData>
+		<SimpleData name="YR2014">665967</SimpleData>
+		<SimpleData name="YR2015">628770</SimpleData>
+		<SimpleData name="latitude">16.0857849</SimpleData>
+		<SimpleData name="longitude">30.0873909</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>30.0873909,16.0857849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Syrian Arab Republic</SimpleData>
+		<SimpleData name="YR2000">5871</SimpleData>
+		<SimpleData name="YR2001">4869</SimpleData>
+		<SimpleData name="YR2002">18913</SimpleData>
+		<SimpleData name="YR2003">20819</SimpleData>
+		<SimpleData name="YR2004">21439</SimpleData>
+		<SimpleData name="YR2005">16401</SimpleData>
+		<SimpleData name="YR2006">12337</SimpleData>
+		<SimpleData name="YR2007">13690</SimpleData>
+		<SimpleData name="YR2008">15211</SimpleData>
+		<SimpleData name="YR2009">17914</SimpleData>
+		<SimpleData name="YR2010">18452</SimpleData>
+		<SimpleData name="YR2011">19931</SimpleData>
+		<SimpleData name="YR2012">729022</SimpleData>
+		<SimpleData name="YR2013">2468369</SimpleData>
+		<SimpleData name="YR2014">3887491</SimpleData>
+		<SimpleData name="YR2015">4872585</SimpleData>
+		<SimpleData name="latitude">35.0331268</SimpleData>
+		<SimpleData name="longitude">38.4734726</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.4734726,35.0331268</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Tanzania</SimpleData>
+		<SimpleData name="YR2000">313</SimpleData>
+		<SimpleData name="YR2001">378</SimpleData>
+		<SimpleData name="YR2002">580</SimpleData>
+		<SimpleData name="YR2003">711</SimpleData>
+		<SimpleData name="YR2004">985</SimpleData>
+		<SimpleData name="YR2005">1549</SimpleData>
+		<SimpleData name="YR2006">1667</SimpleData>
+		<SimpleData name="YR2007">1255</SimpleData>
+		<SimpleData name="YR2008">1270</SimpleData>
+		<SimpleData name="YR2009">1204</SimpleData>
+		<SimpleData name="YR2010">1144</SimpleData>
+		<SimpleData name="YR2011">1163</SimpleData>
+		<SimpleData name="YR2012">1122</SimpleData>
+		<SimpleData name="YR2013">1040</SimpleData>
+		<SimpleData name="YR2014">858</SimpleData>
+		<SimpleData name="YR2015">6221</SimpleData>
+		<SimpleData name="latitude">-6.3068972</SimpleData>
+		<SimpleData name="longitude">34.8539276</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.8539276,-6.3068972</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Togo</SimpleData>
+		<SimpleData name="YR2000">4016</SimpleData>
+		<SimpleData name="YR2001">4354</SimpleData>
+		<SimpleData name="YR2002">10448</SimpleData>
+		<SimpleData name="YR2003">10614</SimpleData>
+		<SimpleData name="YR2004">10819</SimpleData>
+		<SimpleData name="YR2005">51107</SimpleData>
+		<SimpleData name="YR2006">27332</SimpleData>
+		<SimpleData name="YR2007">22502</SimpleData>
+		<SimpleData name="YR2008">16750</SimpleData>
+		<SimpleData name="YR2009">18378</SimpleData>
+		<SimpleData name="YR2010">18330</SimpleData>
+		<SimpleData name="YR2011">17871</SimpleData>
+		<SimpleData name="YR2012">15693</SimpleData>
+		<SimpleData name="YR2013">10347</SimpleData>
+		<SimpleData name="YR2014">9276</SimpleData>
+		<SimpleData name="YR2015">8785</SimpleData>
+		<SimpleData name="latitude">8.5132265</SimpleData>
+		<SimpleData name="longitude">0.9800975</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0.9800975,8.5132265</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Turkey</SimpleData>
+		<SimpleData name="YR2000">47155</SimpleData>
+		<SimpleData name="YR2001">47090</SimpleData>
+		<SimpleData name="YR2002">193704</SimpleData>
+		<SimpleData name="YR2003">185098</SimpleData>
+		<SimpleData name="YR2004">174574</SimpleData>
+		<SimpleData name="YR2005">170567</SimpleData>
+		<SimpleData name="YR2006">227232</SimpleData>
+		<SimpleData name="YR2007">221939</SimpleData>
+		<SimpleData name="YR2008">214378</SimpleData>
+		<SimpleData name="YR2009">146387</SimpleData>
+		<SimpleData name="YR2010">146794</SimpleData>
+		<SimpleData name="YR2011">139779</SimpleData>
+		<SimpleData name="YR2012">135372</SimpleData>
+		<SimpleData name="YR2013">66607</SimpleData>
+		<SimpleData name="YR2014">63892</SimpleData>
+		<SimpleData name="YR2015">59559</SimpleData>
+		<SimpleData name="latitude">39.0510101</SimpleData>
+		<SimpleData name="longitude">34.9303398</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.9303398,39.0510101</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Uganda</SimpleData>
+		<SimpleData name="YR2000">32414</SimpleData>
+		<SimpleData name="YR2001">40141</SimpleData>
+		<SimpleData name="YR2002">40425</SimpleData>
+		<SimpleData name="YR2003">35247</SimpleData>
+		<SimpleData name="YR2004">31963</SimpleData>
+		<SimpleData name="YR2005">34225</SimpleData>
+		<SimpleData name="YR2006">21752</SimpleData>
+		<SimpleData name="YR2007">21341</SimpleData>
+		<SimpleData name="YR2008">7548</SimpleData>
+		<SimpleData name="YR2009">7554</SimpleData>
+		<SimpleData name="YR2010">6441</SimpleData>
+		<SimpleData name="YR2011">5680</SimpleData>
+		<SimpleData name="YR2012">5608</SimpleData>
+		<SimpleData name="YR2013">8177</SimpleData>
+		<SimpleData name="YR2014">7191</SimpleData>
+		<SimpleData name="YR2015">6316</SimpleData>
+		<SimpleData name="latitude">1.277328</SimpleData>
+		<SimpleData name="longitude">32.3899841</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>32.3899841,1.277328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Ukraine</SimpleData>
+		<SimpleData name="YR2000">19312</SimpleData>
+		<SimpleData name="YR2001">26716</SimpleData>
+		<SimpleData name="YR2002">85265</SimpleData>
+		<SimpleData name="YR2003">94148</SimpleData>
+		<SimpleData name="YR2004">89579</SimpleData>
+		<SimpleData name="YR2005">84228</SimpleData>
+		<SimpleData name="YR2006">63723</SimpleData>
+		<SimpleData name="YR2007">25985</SimpleData>
+		<SimpleData name="YR2008">28424</SimpleData>
+		<SimpleData name="YR2009">24522</SimpleData>
+		<SimpleData name="YR2010">25111</SimpleData>
+		<SimpleData name="YR2011">25379</SimpleData>
+		<SimpleData name="YR2012">25256</SimpleData>
+		<SimpleData name="YR2013">5172</SimpleData>
+		<SimpleData name="YR2014">237625</SimpleData>
+		<SimpleData name="YR2015">321300</SimpleData>
+		<SimpleData name="latitude">48.9265633</SimpleData>
+		<SimpleData name="longitude">31.4757824</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>31.4757824,48.9265633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">United States</SimpleData>
+		<SimpleData name="YR2000">176</SimpleData>
+		<SimpleData name="YR2001">219</SimpleData>
+		<SimpleData name="YR2002">383</SimpleData>
+		<SimpleData name="YR2003">395</SimpleData>
+		<SimpleData name="YR2004">451</SimpleData>
+		<SimpleData name="YR2005">683</SimpleData>
+		<SimpleData name="YR2006">1356</SimpleData>
+		<SimpleData name="YR2007">2174</SimpleData>
+		<SimpleData name="YR2008">2137</SimpleData>
+		<SimpleData name="YR2009">2368</SimpleData>
+		<SimpleData name="YR2010">3026</SimpleData>
+		<SimpleData name="YR2011">3778</SimpleData>
+		<SimpleData name="YR2012">4456</SimpleData>
+		<SimpleData name="YR2013">4761</SimpleData>
+		<SimpleData name="YR2014">4987</SimpleData>
+		<SimpleData name="YR2015">4832</SimpleData>
+		<SimpleData name="latitude">39.4432564</SimpleData>
+		<SimpleData name="longitude">-98.9573364</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-98.9573364,39.4432564</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Venezuela, RB</SimpleData>
+		<SimpleData name="YR2000">471</SimpleData>
+		<SimpleData name="YR2001">466</SimpleData>
+		<SimpleData name="YR2002">526</SimpleData>
+		<SimpleData name="YR2003">598</SimpleData>
+		<SimpleData name="YR2004">1256</SimpleData>
+		<SimpleData name="YR2005">2590</SimpleData>
+		<SimpleData name="YR2006">3829</SimpleData>
+		<SimpleData name="YR2007">5094</SimpleData>
+		<SimpleData name="YR2008">5807</SimpleData>
+		<SimpleData name="YR2009">6221</SimpleData>
+		<SimpleData name="YR2010">6701</SimpleData>
+		<SimpleData name="YR2011">7577</SimpleData>
+		<SimpleData name="YR2012">8208</SimpleData>
+		<SimpleData name="YR2013">8395</SimpleData>
+		<SimpleData name="YR2014">8009</SimpleData>
+		<SimpleData name="YR2015">7456</SimpleData>
+		<SimpleData name="latitude">6.4238</SimpleData>
+		<SimpleData name="longitude">-66.5897</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-66.5897,6.4238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Vietnam</SimpleData>
+		<SimpleData name="YR2000">370758</SimpleData>
+		<SimpleData name="YR2001">353224</SimpleData>
+		<SimpleData name="YR2002">373741</SimpleData>
+		<SimpleData name="YR2003">363179</SimpleData>
+		<SimpleData name="YR2004">349780</SimpleData>
+		<SimpleData name="YR2005">358268</SimpleData>
+		<SimpleData name="YR2006">374279</SimpleData>
+		<SimpleData name="YR2007">327776</SimpleData>
+		<SimpleData name="YR2008">328183</SimpleData>
+		<SimpleData name="YR2009">339289</SimpleData>
+		<SimpleData name="YR2010">338698</SimpleData>
+		<SimpleData name="YR2011">337829</SimpleData>
+		<SimpleData name="YR2012">336939</SimpleData>
+		<SimpleData name="YR2013">314105</SimpleData>
+		<SimpleData name="YR2014">313418</SimpleData>
+		<SimpleData name="YR2015">313156</SimpleData>
+		<SimpleData name="latitude">16.9404297</SimpleData>
+		<SimpleData name="longitude">106.8164291</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.8164291,16.9404297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">West Bank and Gaza</SimpleData>
+		<SimpleData name="YR2000">110640</SimpleData>
+		<SimpleData name="YR2001">349161</SimpleData>
+		<SimpleData name="YR2002">428782</SimpleData>
+		<SimpleData name="YR2003">350568</SimpleData>
+		<SimpleData name="YR2004">350617</SimpleData>
+		<SimpleData name="YR2005">349673</SimpleData>
+		<SimpleData name="YR2006">334142</SimpleData>
+		<SimpleData name="YR2007">341237</SimpleData>
+		<SimpleData name="YR2008">340016</SimpleData>
+		<SimpleData name="YR2009">95201</SimpleData>
+		<SimpleData name="YR2010">93323</SimpleData>
+		<SimpleData name="YR2011">94150</SimpleData>
+		<SimpleData name="YR2012">94918</SimpleData>
+		<SimpleData name="YR2013">96044</SimpleData>
+		<SimpleData name="YR2014">97212</SimpleData>
+		<SimpleData name="YR2015">97973</SimpleData>
+		<SimpleData name="latitude">31.9463921</SimpleData>
+		<SimpleData name="longitude">35.2597351</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.2597351,31.9463921</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Yemen, Rep.</SimpleData>
+		<SimpleData name="YR2000">2113</SimpleData>
+		<SimpleData name="YR2001">1985</SimpleData>
+		<SimpleData name="YR2002">1600</SimpleData>
+		<SimpleData name="YR2003">1597</SimpleData>
+		<SimpleData name="YR2004">1606</SimpleData>
+		<SimpleData name="YR2005">1325</SimpleData>
+		<SimpleData name="YR2006">1362</SimpleData>
+		<SimpleData name="YR2007">1632</SimpleData>
+		<SimpleData name="YR2008">1777</SimpleData>
+		<SimpleData name="YR2009">1934</SimpleData>
+		<SimpleData name="YR2010">2076</SimpleData>
+		<SimpleData name="YR2011">2323</SimpleData>
+		<SimpleData name="YR2012">2594</SimpleData>
+		<SimpleData name="YR2013">2428</SimpleData>
+		<SimpleData name="YR2014">2631</SimpleData>
+		<SimpleData name="YR2015">15896</SimpleData>
+		<SimpleData name="latitude">15.5527</SimpleData>
+		<SimpleData name="longitude">48.5164</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>48.5164,15.5527</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#RefugeeDataKML">
+		<SimpleData name="Country">Zimbabwe</SimpleData>
+		<SimpleData name="YR2000">109</SimpleData>
+		<SimpleData name="YR2001">257</SimpleData>
+		<SimpleData name="YR2002">4030</SimpleData>
+		<SimpleData name="YR2003">7162</SimpleData>
+		<SimpleData name="YR2004">9568</SimpleData>
+		<SimpleData name="YR2005">11251</SimpleData>
+		<SimpleData name="YR2006">12782</SimpleData>
+		<SimpleData name="YR2007">14374</SimpleData>
+		<SimpleData name="YR2008">16841</SimpleData>
+		<SimpleData name="YR2009">22449</SimpleData>
+		<SimpleData name="YR2010">24089</SimpleData>
+		<SimpleData name="YR2011">25048</SimpleData>
+		<SimpleData name="YR2012">22101</SimpleData>
+		<SimpleData name="YR2013">19681</SimpleData>
+		<SimpleData name="YR2014">22492</SimpleData>
+		<SimpleData name="YR2015">21344</SimpleData>
+		<SimpleData name="latitude">-19.0002804</SimpleData>
+		<SimpleData name="longitude">29.8687611</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>29.8687611,-19.0002804</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
