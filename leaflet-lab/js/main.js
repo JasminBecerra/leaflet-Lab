@@ -1,5 +1,5 @@
 /* custom JavaScript file by Jasmin Becerra, 2017 */
-//main.js for Leaflet Lab
+//main.js for Leaflet Lab assignment
 
 //function to instantiate the Leaflet map
 function createMap(){
