@@ -3,7 +3,7 @@
 
 //function to instantiate the Leaflet map
 function createMap(){
-    //create the map linked to div id 'mapid' from index
+    //create the map linked to div id 'mapid' from index.html
     var mymap = L.map('mapid', {
         center: [20, 0],
         zoom: 2
@@ -56,7 +56,6 @@ function getData(mymap){
 
 
 
-
 //calculate the radius of each proportional symbol
 function calcPropRadius(attValue) {
     //scale factor to adjust symbol size evenly
@@ -70,10 +69,9 @@ function calcPropRadius(attValue) {
 };
 
 
-
 //Step 3: Add circle markers for point features to the map
 function createPropSymbols(data, mymap){
-    //Determine which attribute to visualize with proportional symbols
+    //Determine which attribute to visualize with proportional symbols (year 2012)
     var attribute = "YR2012";
 
     //create marker options
@@ -117,6 +115,7 @@ function getData(mymap){
 
 function onEachFeature(feature, layer) {
     //no property named popupContent; instead, create html string with properties
+    //empty variable first
     var popupContent = "";
     if (feature.properties) {
         //loop to add feature property names and values to html string
@@ -127,9 +126,9 @@ function onEachFeature(feature, layer) {
     };
 };
 
-//function to convert markers to circle markers
+//function to convert markers to circles
 function pointToLayer(feature, latlng){
-    //Determine which attribute to visualize with proportional symbols
+    //Determine which attribute (year 2012) to visualize with proportional symbols
     var attribute = "YR2012";
 
     //create marker options
@@ -141,7 +140,7 @@ function pointToLayer(feature, latlng){
         fillOpacity: 0.8
     };
 
-    //For each feature, determine its value for the selected attribute
+    //For each feature, determine value for the selected attribute
     var attValue = Number(feature.properties[attribute]);
 
     //Give each feature's circle marker a radius based on its attribute value
@@ -150,7 +149,7 @@ function pointToLayer(feature, latlng){
     //create circle marker layer
     var layer = L.circleMarker(latlng, options);
 
-    //build popup content string
+    //build popup content string for country of origin
     var popupContent = "<p><b>Country of Origin:</b> " + feature.properties.Country + "</p>";
 
     //add formatted attribute (year) to popup content string
@@ -166,7 +165,7 @@ function pointToLayer(feature, latlng){
 
 //Add circle markers for point features to the map
 function createPropSymbols(data, mymap){
-    //create a Leaflet GeoJSON layer and add it to the map
+    //create a Leaflet GeoJSON layer and add to the map
     L.geoJson(data, {
         pointToLayer: pointToLayer
     }).addTo(mymap);
