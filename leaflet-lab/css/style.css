@@ -2,14 +2,25 @@
 
 div {
 	/*background-color: #ccc;*/
-	font-size:15px;
+	font-size:13px;
 }
 body{
 	margin:10;
 }
 
 #mapid {
-	height: 900px;
+	height: 700px;
+	width: 80%;
+	display: inline-block;
 }
 
+#panel {
+    width: 16%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.leaflet-popup-content p {
+    margin: 0.3em 0;
+}
 

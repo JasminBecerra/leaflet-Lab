@@ -99,19 +99,6 @@ function createPropSymbols(data, mymap){
     }).addTo(mymap);
 };
 
-//Step 2: Import GeoJSON data
-function getData(mymap){
-    //load data
-    $.ajax("data/RefugeeDataMap.geojson", {
-        dataType: "json",
-        success: function(response){
-            //call function to create proportional symbols
-            createPropSymbols(response, mymap);
-        }
-    });
-};
-
-
 
 function onEachFeature(feature, layer) {
     //no property named popupContent; instead, create html string with properties
@@ -150,14 +137,37 @@ function pointToLayer(feature, latlng){
     var layer = L.circleMarker(latlng, options);
 
     //build popup content string for country of origin
-    var popupContent = "<p><b>Country of Origin:</b> " + feature.properties.Country + "</p>";
+    var panelContent = "<p><b>Country of Origin:</b> " + feature.properties.Country + "</p>";
 
     //add formatted attribute (year) to popup content string
-    var year = attribute.split("YR");
-    popupContent += "<p><b> Refugees in "+year+":</b> " + feature.properties[attribute] + "</p>";
+    var year = attribute.split("YR")[1];
+    // console.log(year)
+    panelContent += "<p><b> Refugees in "+year+":</b> " + feature.properties[attribute] + "</p>";
+
+    //popup content is now just Country of Origin
+    var popupContent = feature.properties.Country;
 
     //bind the popup to the circle marker
     layer.bindPopup(popupContent);
+
+    //bind popup to the circle marker
+    layer.bindPopup(popupContent, {
+        offset: new L.Point(0,-options.radius),
+        closeButton: false 
+    });
+
+    //event listeners to open popup on hover/mouseover
+    layer.on({
+        mouseover: function(){
+            this.openPopup();
+        },
+        mouseout: function(){
+            this.closePopup();
+        },
+        click: function(){
+            $("#panel").html(panelContent);
+        }
+    });
 
     //return the circle marker to the L.geoJson pointToLayer option
     return layer;
@@ -170,6 +180,32 @@ function createPropSymbols(data, mymap){
         pointToLayer: pointToLayer
     }).addTo(mymap);
 };
+
+// //Step 1: Create new sequence controls
+// function createSequenceControls(mymap){
+//     //create range input element (slider)
+//     $('#panel').append('<input class="range-slider" type="range">');
+//     //set slider attributes
+//     $('.range-slider').attr({
+//         max: 15,
+//         min: 0,
+//         value: 0,
+//         step: 1
+// };
+
+//Import GeoJSON data
+function getData(mymap){
+    //load data
+    $.ajax("data/RefugeeDataMap.geojson", {
+        dataType: "json",
+        success: function(response){
+            //call function to create proportional symbols
+            createPropSymbols(response, mymap);
+            createSequenceControls(mymap);
+        }
+    });
+};
+
 
 $(document).ready(createMap);
 
