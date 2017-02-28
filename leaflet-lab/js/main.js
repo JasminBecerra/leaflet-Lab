@@ -1,7 +1,7 @@
 /* custom JavaScript file by Jasmin Becerra, 2017 */
 //main.js for Leaflet Lab assignment
 
-//function to instantiate the Leaflet map
+//function to initialize the Leaflet map
 function createMap(){
     //create the map linked to div id 'mapid' from index.html
     var mymap = L.map('mapid', {
@@ -21,7 +21,6 @@ function createMap(){
     //call getData function (define below)
     getData(mymap);
 };
-
 
 
 //function to retrieve the data and place it on the map
@@ -69,7 +68,7 @@ function calcPropRadius(attValue) {
 };
 
 
-//Step 3: Add circle markers for point features to the map
+//Add circle markers for point features to the map
 function createPropSymbols(data, mymap){
     //Determine which attribute to visualize with proportional symbols (year 2012)
     var attribute = "YR2012";
@@ -87,10 +86,10 @@ function createPropSymbols(data, mymap){
     //create a Leaflet GeoJSON layer and add to map
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            //step 5: determine value for selected attribute (for ea. feature)
+            //determine value for selected attribute (for ea. feature)
             var attValue = Number(feature.properties[attribute]);
 
-            //step 6: give ea. feature's circle marker a radius based on its att value
+            //give ea. feature's circle marker a radius based on its att value
             geojsonMarkerOptions.radius = calcPropRadius(attValue)
 
             //create the circle markers
@@ -99,6 +98,17 @@ function createPropSymbols(data, mymap){
     }).addTo(mymap);
 };
 
+//Import GeoJSON data to create prop symbols
+function getData(mymap){
+    //load the data
+    $.ajax("data/RefugeeDataMap.geojson", {
+        dataType: "json",
+        success: function(response){
+            //call func to create prop symbols
+            createPropSymbols(response, mymap);
+        }
+    });
+};
 
 function onEachFeature(feature, layer) {
     //no property named popupContent; instead, create html string with properties
@@ -173,7 +183,7 @@ function pointToLayer(feature, latlng){
     return layer;
 };
 
-//Add circle markers for point features to the map
+//Add circle markers for points to mymap
 function createPropSymbols(data, mymap){
     //create a Leaflet GeoJSON layer and add to the map
     L.geoJson(data, {
@@ -181,17 +191,22 @@ function createPropSymbols(data, mymap){
     }).addTo(mymap);
 };
 
-// //Step 1: Create new sequence controls
-// function createSequenceControls(mymap){
-//     //create range input element (slider)
-//     $('#panel').append('<input class="range-slider" type="range">');
-//     //set slider attributes
-//     $('.range-slider').attr({
-//         max: 15,
-//         min: 0,
-//         value: 0,
-//         step: 1
-// };
+//create new sequence controls
+function createSequenceControls(mymap){
+    //create range input element (slider)
+    $('#panel').append('<input class="range-slider" type="range">');
+    //set slider attributes
+    
+    $('.range-slider').attr({
+        max: 15,
+        min: 0,
+        value: 0,
+        step: 1
+});
+    //adding skip buttons, reverseand forward as "<<" and ">>" for simplicity
+    $('#panel').append('<button class="skip" id="reverse"><<</button>');
+    $('#panel').append('<button class="skip" id="forward">>></button>');
+};
 
 //Import GeoJSON data
 function getData(mymap){
