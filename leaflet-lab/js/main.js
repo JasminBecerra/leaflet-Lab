@@ -124,9 +124,12 @@ function onEachFeature(feature, layer) {
 };
 
 //function to convert markers to circles
-function pointToLayer(feature, latlng){
-    //Determine which attribute (year 2012) to visualize with proportional symbols
-    var attribute = "YR2012";
+function pointToLayer(feature, latlng, attributes){
+    //assign attribute based on attribute index in array (starting attribute should be YR2000)
+    var attribute = attributes[0];
+    // //console.log to check if it worked
+    // console.log(attribute)
+    // //checks out, YR2000 
 
     //create marker options
     var options = {
@@ -184,10 +187,12 @@ function pointToLayer(feature, latlng){
 };
 
 //Add circle markers for points to mymap
-function createPropSymbols(data, mymap){
+function createPropSymbols(data, mymap, attributes){
     //create a Leaflet GeoJSON layer and add to the map
     L.geoJson(data, {
-        pointToLayer: pointToLayer
+        pointToLayer: function(feature, latlng){
+            return pointToLayer(feature, latlng, attributes);
+        }
     }).addTo(mymap);
 };
 
