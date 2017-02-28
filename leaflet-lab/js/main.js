@@ -208,15 +208,40 @@ function createSequenceControls(mymap){
     $('#panel').append('<button class="skip" id="forward">>></button>');
 };
 
+//build attribute array from refugee data
+function processData(data){
+    //empty array to hold attributes
+    var attributes = [];
+
+    //first feature's properties
+    var properties = data.features[0].properties;
+
+    //push ea. attribute name into array
+    for (var attribute in properties){
+        //only take attributes with yearly # of refugee values
+        if (attribute.indexOf("YR") > -1){
+            attributes.push(attribute);
+        };
+    };
+    // //console.log to check if array went through
+    // console.log(attributes);
+
+    return attributes;
+};
+
+
 //Import GeoJSON data
 function getData(mymap){
     //load data
     $.ajax("data/RefugeeDataMap.geojson", {
         dataType: "json",
         success: function(response){
+            //create array for attributes (for sequencing purposes)
+            var attributes = processData(response);
+
             //call function to create proportional symbols
-            createPropSymbols(response, mymap);
-            createSequenceControls(mymap);
+            createPropSymbols(response, mymap, attributes);
+            createSequenceControls(mymap, attributes);
         }
     });
 };
