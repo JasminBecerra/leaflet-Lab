@@ -24,7 +24,7 @@ function createMap(){
 
 
 //function to retrieve the data and place it on the map
-function getData(mymap){
+function getData(mymap, attributes){
     //load the data
     $.ajax("data/RefugeeDataMap.geojson", {
         dataType: "json",
@@ -56,7 +56,7 @@ function getData(mymap){
 
 
 //calculate the radius of each proportional symbol
-function calcPropRadius(attValue) {
+function calcPropRadius(attValue, attributes) {
     //scale factor to adjust symbol size evenly
     var scaleFactor = .0009;
     //area based on attribute value and scale factor
@@ -69,7 +69,7 @@ function calcPropRadius(attValue) {
 
 
 //Add circle markers for point features to the map
-function createPropSymbols(data, mymap){
+function createPropSymbols(data, mymap, attributes){
     //Determine which attribute to visualize with proportional symbols (year 2012)
     var attribute = "YR2012";
 
@@ -85,7 +85,7 @@ function createPropSymbols(data, mymap){
 
     //create a Leaflet GeoJSON layer and add to map
     L.geoJson(data, {
-        pointToLayer: function (feature, latlng) {
+        pointToLayer: function (feature, latlng, attributes) {
             //determine value for selected attribute (for ea. feature)
             var attValue = Number(feature.properties[attribute]);
 
@@ -99,7 +99,7 @@ function createPropSymbols(data, mymap){
 };
 
 //Import GeoJSON data to create prop symbols
-function getData(mymap){
+function getData(mymap, attributes){
     //load the data
     $.ajax("data/RefugeeDataMap.geojson", {
         dataType: "json",
@@ -110,7 +110,7 @@ function getData(mymap){
     });
 };
 
-function onEachFeature(feature, layer) {
+function onEachFeature(feature, layer, attributes) {
     //no property named popupContent; instead, create html string with properties
     //empty variable first
     var popupContent = "";
@@ -196,8 +196,35 @@ function createPropSymbols(data, mymap, attributes){
     }).addTo(mymap);
 };
 
+function updatePropSymbols(mymap, attribute){
+    mymap.eachLayer(function(layer){
+        if (layer.feature && layer.feature.properties[attribute]){
+            //get access to feature properties
+            var props = layer.feature.properties;
+
+            //update ea. feature's radius (base on attribute values)
+            var radius = calcPropRadius(props[attribute]);
+            layer.setRadius(radius);
+
+            //add city to popop string
+            var popupContent = "<p><b>Country of origin:</b>" + props.Country + "</p>";
+
+            //add formatted attribute to panel string
+            var year = attribute.split("YR")[1];
+            popupContent += "<p><b>Refugees in" + year + ":</b>" + props[attribute];
+
+            //update/replace the layer popup
+            layer.bindPopup(popupContent, {
+                offset: new L.Point(0, -radius)
+            });
+
+
+        };
+    });
+};
+
 //create new sequence controls
-function createSequenceControls(mymap){
+function createSequenceControls(mymap, attributes){
     //create range input element (slider)
     $('#panel').append('<input class="range-slider" type="range">');
     //set slider attributes
@@ -211,10 +238,47 @@ function createSequenceControls(mymap){
     //adding skip buttons, reverseand forward as "<<" and ">>" for simplicity
     $('#panel').append('<button class="skip" id="reverse"><<</button>');
     $('#panel').append('<button class="skip" id="forward">>></button>');
+
+    //click listener for buttons
+    $('.skip').click(function(){
+        //getting the old index value
+        var index = $('.range-slider').val();
+
+        if ($(this).attr('id') == 'forward'){
+            index++;
+            //if past the last attribute value, wrap back to the first
+            // we have 16 attributes (0 to 15), so if the index is greater
+            //than 15, we loop back to the first attribute (aka index 0)
+            index = index >15 ? 0 : index;
+        } else if ($(this).attr('id') == 'reverse'){
+            index--;
+            //if past the first attribute, wrap back to the last
+            index = index < 0 ? 15 : index;
+        };
+
+        //update slider
+        $('.range-slider').val(index);
+
+        //pass new attribute to update the prop. symbols
+        updatePropSymbols(mymap, attributes[index]);
+    });
+
+    //input listener for slider
+    $('.range-slider').on('input', function(){
+        //get new index value
+        var index = $(this).val();
+        // console.log(index);
+        // //index slider checks out!
+
+        //pass new attribute to update the prop. symbols
+        updatePropSymbols(mymap, attributes[index]);
+
+    });
+
 };
 
 //build attribute array from refugee data
-function processData(data){
+function processData(data, attributes){
     //empty array to hold attributes
     var attributes = [];
 
@@ -236,7 +300,7 @@ function processData(data){
 
 
 //Import GeoJSON data
-function getData(mymap){
+function getData(mymap, attributes){
     //load data
     $.ajax("data/RefugeeDataMap.geojson", {
         dataType: "json",
