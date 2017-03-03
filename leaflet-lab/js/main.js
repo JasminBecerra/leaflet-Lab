@@ -96,6 +96,7 @@ function createPropSymbols(data, mymap, attributes){
             return L.circleMarker(latlng, geojsonMarkerOptions);
         }
     }).addTo(mymap);
+    searchOperator(data, featLayer);
 };
 
 //Import GeoJSON data to create prop symbols
@@ -188,7 +189,7 @@ function pointToLayer(feature, latlng, attributes){
 //Add circle markers for points to mymap
 function createPropSymbols(data, mymap, attributes){
     //create a Leaflet GeoJSON layer and add to the map
-    var ftLayer = L.geoJson(data, {
+    var featLayer = L.geoJson(data, {
         pointToLayer: function(feature, latlng){
             return pointToLayer(feature, latlng, attributes);
         }
@@ -219,6 +220,7 @@ function updatePropSymbols(mymap, attribute){
 
         };
     });
+
 };
 
 //create new sequence controls
@@ -299,6 +301,7 @@ function processData(data){
 
 function searchOperator(data, featLayer){
     var searchOp = new L.Control.Search({
+        position: 'topleft',
         layer: featLayer,
         property: 'Country',
         marker: false,
@@ -307,6 +310,7 @@ function searchOperator(data, featLayer){
             mymap.setView(latlng, zoom);
         }
     });
+
     searchOp.on('search:locationfound', function(e){
         e.layer.setStyle({
             fillColor: '#e29a9a',
@@ -314,17 +318,16 @@ function searchOperator(data, featLayer){
 
             if(e.layer._popup)
                 e.layer.openPopup();
-            }).on('search:collapsed', function(e){
-                ftLayer.eachLayer(function(layer){
-                    ftLayer.resetStyle(layer);
+    }).on('search:collapsed', function(e){
+            featLayer.eachLayer(function(layer){
+                featLayer.resetStyle(layer);
             });
         });
-    mymap.addControl(searchOp);
+        mymap.addControl( searchOp );
 }
 
-
 //Import GeoJSON data
-function getData(mymap, attributes){
+function getData(mymap){
     //load data
     $.ajax("data/RefugeeDataMap.geojson", {
         dataType: "json",
@@ -335,7 +338,6 @@ function getData(mymap, attributes){
             //call function to create proportional symbols
             createPropSymbols(response, mymap, attributes);
             createSequenceControls(mymap, attributes);
-            searchOperator(data, featLayer);
             // REMEMBER: pass attributes as a paramter in previous functions
         }
     });
