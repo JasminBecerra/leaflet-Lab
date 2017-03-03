@@ -320,7 +320,6 @@ function searchOperator(data, featLayer){
             });
         });
     mymap.addControl(searchOp);
-        searchOperator(data, featLayer);
 }
 
 
@@ -336,6 +335,7 @@ function getData(mymap, attributes){
             //call function to create proportional symbols
             createPropSymbols(response, mymap, attributes);
             createSequenceControls(mymap, attributes);
+            searchOperator(data, featLayer);
             // REMEMBER: pass attributes as a paramter in previous functions
         }
     });
