@@ -56,7 +56,7 @@ function getData(mymap, attributes){
 
 
 //calculate the radius of each proportional symbol
-function calcPropRadius(attValue, attributes) {
+function calcPropRadius(attValue) {
     //scale factor to adjust symbol size evenly
     var scaleFactor = .0009;
     //area based on attribute value and scale factor
@@ -150,18 +150,16 @@ function pointToLayer(feature, latlng, attributes){
     var layer = L.circleMarker(latlng, options);
 
     //build popup content string for country of origin
-    var panelContent = "<p><b>Country of Origin:</b> " + feature.properties.Country + "</p>";
+    var popupContent = "<p><b>Country of Origin:</b> " + feature.properties.Country + "</p>";
 
     //add formatted attribute (year) to popup content string
-    var year = attribute.split("YR")[1];
+    var year = attribute.split("YR")[0];
     // console.log(year)
-    panelContent += "<p><b> Refugees in "+year+":</b> " + feature.properties[attribute] + "</p>";
+    popupContent += "<p><b> Refugees in "+ year +":</b> " + feature.properties[attribute] + "</p>";
 
-    //popup content is now just Country of Origin
-    var popupContent = feature.properties.Country;
 
-    //bind the popup to the circle marker
-    layer.bindPopup(popupContent);
+    // //bind the popup to the circle marker
+    // layer.bindPopup(popupContent);
 
     //bind popup to the circle marker
     layer.bindPopup(popupContent, {
@@ -177,9 +175,10 @@ function pointToLayer(feature, latlng, attributes){
         mouseout: function(){
             this.closePopup();
         },
-        click: function(){
-            $("#panel").html(panelContent);
-        }
+        // click: function(){
+        //     $("#panel").html(panelContent);
+        // }
+        // I removed the click function so that only the widger is in the #panel
     });
 
     //return the circle marker to the L.geoJson pointToLayer option
@@ -189,12 +188,12 @@ function pointToLayer(feature, latlng, attributes){
 //Add circle markers for points to mymap
 function createPropSymbols(data, mymap, attributes){
     //create a Leaflet GeoJSON layer and add to the map
-    L.geoJson(data, {
+    var ftLayer = L.geoJson(data, {
         pointToLayer: function(feature, latlng){
             return pointToLayer(feature, latlng, attributes);
         }
     }).addTo(mymap);
-};
+}
 
 function updatePropSymbols(mymap, attribute){
     mymap.eachLayer(function(layer){
@@ -211,13 +210,12 @@ function updatePropSymbols(mymap, attribute){
 
             //add formatted attribute to panel string
             var year = attribute.split("YR")[1];
-            popupContent += "<p><b>Refugees in" + year + ":</b>" + props[attribute];
+            popupContent += "<p><b>Refugees in " + year + ":</b>" + props[attribute];
 
             //update/replace the layer popup
             layer.bindPopup(popupContent, {
                 offset: new L.Point(0, -radius)
             });
-
 
         };
     });
@@ -278,7 +276,7 @@ function createSequenceControls(mymap, attributes){
 };
 
 //build attribute array from refugee data
-function processData(data, attributes){
+function processData(data){
     //empty array to hold attributes
     var attributes = [];
 
@@ -294,9 +292,36 @@ function processData(data, attributes){
     };
     // //console.log to check if array went through
     // console.log(attributes);
+    ////looks good!
 
     return attributes;
 };
+
+function searchOperator(data, featLayer){
+    var searchOp = new L.Control.Search({
+        layer: featLayer,
+        property: 'Country',
+        marker: false,
+        moveToLocation: function(latlng, title, mymap){
+            var zoom = mymap.getBoundsZoom(latlng.layer.getBounds());
+            mymap.setView(latlng, zoom);
+        }
+    });
+    searchOp.on('search:locationfound', function(e){
+        e.layer.setStyle({
+            fillColor: '#e29a9a',
+            color: '#cc6464'});
+
+            if(e.layer._popup)
+                e.layer.openPopup();
+            }).on('search:collapsed', function(e){
+                ftLayer.eachLayer(function(layer){
+                    ftLayer.resetStyle(layer);
+            });
+        });
+    mymap.addControl(searchOp);
+        searchOperator(data, featLayer);
+}
 
 
 //Import GeoJSON data
@@ -311,6 +336,7 @@ function getData(mymap, attributes){
             //call function to create proportional symbols
             createPropSymbols(response, mymap, attributes);
             createSequenceControls(mymap, attributes);
+            // REMEMBER: pass attributes as a paramter in previous functions
         }
     });
 };
