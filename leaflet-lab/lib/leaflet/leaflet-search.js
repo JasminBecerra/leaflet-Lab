@@ -1,4 +1,3 @@
-
 (function (factory) {
     if(typeof define === 'function' && define.amd) {
     //AMD
@@ -962,4 +961,3 @@ L.control.search = function (options) {
 return L.Control.Search;
 
 });
-

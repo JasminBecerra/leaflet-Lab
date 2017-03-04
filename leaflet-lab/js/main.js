@@ -1,8 +1,7 @@
 /* custom JavaScript file by Jasmin Becerra, 2017 */
 //main.js for Leaflet Lab assignment
 
-//function to initialize the Leaflet map
-function createMap(){
+
     //create the map linked to div id 'mapid' from index.html
     var mymap = L.map('mapid', {
         center: [20, 0],
@@ -20,38 +19,36 @@ function createMap(){
 
     //call getData function (define below)
     getData(mymap);
-};
+
+// //function to retrieve the data and place it on the map
+// function getData(mymap, attributes){
+//     //load the data
+//     $.ajax("data/RefugeeDataMap.geojson", {
+//         dataType: "json",
+//         success: function(response){
+//         	//create marker options (set POI symbols to circles)
+//             var geojsonMarkerOptions = {
+//                 radius: 8,
+//                 fillColor: "#72a393",
+//                 color: "#4e7265",
+//                 weight: 1,
+//                 opacity: 1,
+//                 fillOpacity: 0.8
+//             };
 
 
-//function to retrieve the data and place it on the map
-function getData(mymap, attributes){
-    //load the data
-    $.ajax("data/RefugeeDataMap.geojson", {
-        dataType: "json",
-        success: function(response){
-        	//create marker options (set POI symbols to circles)
-            var geojsonMarkerOptions = {
-                radius: 8,
-                fillColor: "#72a393",
-                color: "#4e7265",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8
-            };
-
-
-            //added geoJSON data via a geoJSON layer using the L. method
-            //added optional paramter to make POI symbols circles
-            //added onFeature: onEachFeature here, so that I preserved the circle markers
-            //and also called the onEachFeature function for info pop-ups
-            L.geoJson(response, {onEachFeature: onEachFeature,
-                pointToLayer: function (feature, latlng){
-                    return L.circleMarker(latlng, geojsonMarkerOptions);
-                }
-            }).addTo(mymap);
-        }
-    });
-};
+//             //added geoJSON data via a geoJSON layer using the L. method
+//             //added optional paramter to make POI symbols circles
+//             //added onFeature: onEachFeature here, so that I preserved the circle markers
+//             //and also called the onEachFeature function for info pop-ups
+//             L.geoJson(response, {onEachFeature: onEachFeature,
+//                 pointToLayer: function (feature, latlng){
+//                     return L.circleMarker(latlng, geojsonMarkerOptions);
+//                 }
+//             }).addTo(mymap);
+//         }
+//     });
+// };
 
 
 
@@ -67,37 +64,6 @@ function calcPropRadius(attValue) {
     return radius;
 };
 
-
-//Add circle markers for point features to the map
-function createPropSymbols(data, mymap, attributes){
-    //Determine which attribute to visualize with proportional symbols (year 2012)
-    var attribute = "YR2012";
-
-    //create marker options
-    var geojsonMarkerOptions = {
-        radius: 8,
-        fillColor: "#72a393",
-        color: "#4e7265",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-    };
-
-    //create a Leaflet GeoJSON layer and add to map
-    L.geoJson(data, {
-        pointToLayer: function (feature, latlng, attributes) {
-            //determine value for selected attribute (for ea. feature)
-            var attValue = Number(feature.properties[attribute]);
-
-            //give ea. feature's circle marker a radius based on its att value
-            geojsonMarkerOptions.radius = calcPropRadius(attValue)
-
-            //create the circle markers
-            return L.circleMarker(latlng, geojsonMarkerOptions);
-        }
-    }).addTo(mymap);
-    searchOperator(data, featLayer);
-};
 
 //Import GeoJSON data to create prop symbols
 function getData(mymap, attributes){
@@ -129,8 +95,8 @@ function pointToLayer(feature, latlng, attributes){
     //assign attribute based on attribute index in array (starting attribute should be YR2000)
     var attribute = attributes[0];
     // //console.log to check if it worked
-    // console.log(attribute)
-    // //checks out, YR2000 
+    console.log(attribute)
+    //checks out, YR2000 
 
     //create marker options
     var options = {
@@ -184,7 +150,7 @@ function pointToLayer(feature, latlng, attributes){
 
     //return the circle marker to the L.geoJson pointToLayer option
     return layer;
-};
+}
 
 //Add circle markers for points to mymap
 function createPropSymbols(data, mymap, attributes){
@@ -194,7 +160,8 @@ function createPropSymbols(data, mymap, attributes){
             return pointToLayer(feature, latlng, attributes);
         }
     }).addTo(mymap);
-}
+    searchOperator(data, featLayer);
+};
 
 function updatePropSymbols(mymap, attribute){
     mymap.eachLayer(function(layer){
@@ -293,17 +260,16 @@ function processData(data){
         };
     };
     // //console.log to check if array went through
-    // console.log(attributes);
-    ////looks good!
+    console.log(attributes);
+    //looks good!
 
     return attributes;
 };
 
-function searchOperator(data, featLayer){
+function searchOperator(data, someLayer){
     var searchOp = new L.Control.Search({
-        position: 'topleft',
-        layer: featLayer,
-        property: 'Country',
+        layer: someLayer,
+        propertyName: 'Country',
         marker: false,
         moveToLocation: function(latlng, title, mymap){
             var zoom = mymap.getBoundsZoom(latlng.layer.getBounds());
@@ -311,20 +277,23 @@ function searchOperator(data, featLayer){
         }
     });
 
-    searchOp.on('search:locationfound', function(e){
+
+    searchOp.on('search:locationfound', function(e) {
         e.layer.setStyle({
             fillColor: '#e29a9a',
             color: '#cc6464'});
 
             if(e.layer._popup)
                 e.layer.openPopup();
+            
     }).on('search:collapsed', function(e){
-            featLayer.eachLayer(function(layer){
-                featLayer.resetStyle(layer);
+            someLayer.eachLayer(function(layer){
+                someLayer.resetStyle(layer);
             });
         });
-        mymap.addControl( searchOp );
-}
+    mymap.addControl(searchOp);
+
+};
 
 //Import GeoJSON data
 function getData(mymap){
@@ -344,5 +313,5 @@ function getData(mymap){
 };
 
 
-$(document).ready(createMap);
+$(document).ready();
 
