@@ -94,9 +94,9 @@ function onEachFeature(feature, layer, attributes) {
 function pointToLayer(feature, latlng, attributes){
     //assign attribute based on attribute index in array (starting attribute should be YR2000)
     var attribute = attributes[0];
-    // //console.log to check if it worked
-    console.log(attribute)
-    //checks out, YR2000 
+    // // //console.log to check if it worked
+    // console.log(attribute)
+    // //checks out, YR2000 
 
     //create marker options
     var options = {
@@ -145,7 +145,7 @@ function pointToLayer(feature, latlng, attributes){
         // click: function(){
         //     $("#panel").html(panelContent);
         // }
-        // I removed the click function so that only the widger is in the #panel
+        // I removed the click function so that only the widget is in the #panel
     });
 
     //return the circle marker to the L.geoJson pointToLayer option
@@ -174,18 +174,34 @@ function updatePropSymbols(mymap, attribute){
             layer.setRadius(radius);
 
             //add city to popop string
-            var popupContent = "<p><b>Country of origin:</b>" + props.Country + "</p>";
+            var popupContent = "<p><b>Country of origin: </b>" + props.Country + "</p>";
 
             //add formatted attribute to panel string
             var year = attribute.split("YR")[1];
-            popupContent += "<p><b>Refugees in " + year + ":</b>" + props[attribute];
+            popupContent += "<p><b>Refugees in " + year + ": </b>" + props[attribute] +"</p>";
 
             //update/replace the layer popup
             layer.bindPopup(popupContent, {
-                offset: new L.Point(0, -radius)
+                offset: new L.Point(0, -radius),
+                closeButton: false
+            });
+                //event listeners to open popup on hover/mouseover
+            layer.on({
+                mouseover: function(){
+                    this.openPopup();
+                },
+                mouseout: function(){
+                    this.closePopup();
+                },
+                // click: function(){
+                //     $("#panel").html(panelContent);
+                // }
+                // I removed the click function so that only the widget is in the #panel
             });
 
+
         };
+
     });
 
 };
