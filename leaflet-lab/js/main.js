@@ -271,9 +271,13 @@ function searchOperator(data, someLayer){
         layer: someLayer,
         propertyName: 'Country',
         marker: false,
+        zoom: 4,
         moveToLocation: function(latlng, title, mymap){
-            var zoom = mymap.getBoundsZoom(latlng.layer.getBounds());
-            mymap.setView(latlng, zoom);
+            if(this.options.zoom)
+            
+            this._map.setView(latlng, this.options.zoom);
+        else
+            this._map.panTo(latlng);
         }
     });
 
