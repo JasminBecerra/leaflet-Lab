@@ -85,6 +85,8 @@ function createPropSymbols(data, mymap, attributes){
         }
     }).addTo(mymap);
     searchOperator(data, featLayer);
+        // createLegend(mymap, attribute);
+        // // wasn't sure where to call this
 };
 
 
@@ -112,6 +114,7 @@ function updatePropSymbols(mymap, attribute){
 
             createPopup(props, attribute, layer, radius);
             updateLegend(mymap, attribute);
+            //parameters were "attribute" not "attributes"! fixed now
 
         };
     });
@@ -150,8 +153,8 @@ function createSequenceControls(mymap, attributes){
                 $(container).append('<button class="skip" id="reverse" title="Reverse"><<</button>');
                 $(container).append('<button class="skip" id="forward" title="Forward">>></button>');
 
-                //kill mouse event listeners
-                $(container).on('mousedown db;click', function(e){
+                //kill mouse event listeners on mymap
+                $(container).on('mousedown dblclick', function(e){
                     L.DomEvent.stopPropagation(e);
                 });
 
@@ -276,23 +279,23 @@ function createLegend(mymap, attributes){
 
         onAdd: function (mymap) {
             // create the control container with a particular class name
-            var container = L.DomUtil.create('div', 'legend-control-container');
+            var container = L.DomUtil.create('div', 'legend-container');
 
                 //inserting label on the legend
             $(container).append('<div id ="temporal-legend">');
 
             //step 1: starting attr legend svg string
-            var svg = '<svg id="attribute-legend" width="160px" height="60px">';
+            var svg = '<svg id="attribute-legend" width="190px" height="80px">';
 
             //array of circle names for loop
             var circles = {
                 max: 20,
-                mean: 60,
-                min: 100
+                mean: 40,
+                min: 60
             };
 
             //step 2: loop to add ea. circle and txt to svg string
-            for (var i=0; i<circles.length; i++){
+            for (var circle in circles){
                 //circle string
                 svg+= '<circle class="legend-circle" id=' + circle +
                 '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="30"/>';
@@ -343,7 +346,7 @@ function updateLegend(mymap, attribute){
 
 
         //add text to legend (step 4)
-        $('#'+key+'-text').text(Math.round(circleValues[key]*100)/100 + "refugees");
+        $('#'+key+'-text').text(Math.round(circleValues[key]*100)/100 + " refugees");
     };
 
 };
@@ -351,8 +354,8 @@ function updateLegend(mymap, attribute){
 //function to calculate the mean, max, and min values for attributes
 function getCircleValues(mymap, attribute){
     //start with min at highest poss, and max at lowest poss number
-    var min = Infinity,
-    max = -Infinity;
+    var min = Infinity;
+    var max = -Infinity;
 
     mymap.eachLayer(function(layer){
         //get att value
