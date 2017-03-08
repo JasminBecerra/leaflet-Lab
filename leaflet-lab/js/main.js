@@ -110,12 +110,11 @@ function updatePropSymbols(mymap, attribute){
             });
 
 
-            createPopup(props, attribute, layer, radius)
+            createPopup(props, attribute, layer, radius);
+            updateLegend(mymap, attribute);
 
         };
     });
-    createLegend(mymap, attributes);
-    updateLegend(mymap, attributes);
 
 };
 
@@ -280,19 +279,27 @@ function createLegend(mymap, attributes){
             var container = L.DomUtil.create('div', 'legend-control-container');
 
                 //inserting label on the legend
-            $(container).append('<div id ="dynamic-legend"><b>Refugees in ' + attributes[0].split("YR")[1] +"</b></div>");
+            $(container).append('<div id ="temporal-legend">');
 
             //step 1: starting attr legend svg string
-            var svg = '<svg id="temporal-legend" width="180px" height="180px">';
+            var svg = '<svg id="attribute-legend" width="160px" height="60px">';
 
             //array of circle names for loop
-            var circles = ["max", "mean", "min"];
+            var circles = {
+                max: 20,
+                mean: 60,
+                min: 100
+            };
 
             //step 2: loop to add ea. circle and txt to svg string
             for (var i=0; i<circles.length; i++){
                 //circle string
-                svg+= '<circle class="legend-circle" id=' + circles[i] +
-                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="90"/>';
+                svg+= '<circle class="legend-circle" id=' + circle +
+                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="30"/>';
+            
+                //text string
+                svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>'
+
             };
 
             //close the string
@@ -309,13 +316,14 @@ function createLegend(mymap, attributes){
 
     mymap.addControl(new LegendControl());
     updateLegend(mymap, attributes[0]);
+
 };
 
 //update legend as user changes year
 function updateLegend(mymap, attribute){
     //create content for legend
     var year = attribute.split("YR")[1];
-    var content = "Refugees in" + year;
+    var content = "Refugees in " + year;
 
     //replace the content in the legend with the new stuff
     $('#temporal-legend').html(content);
@@ -329,9 +337,13 @@ function updateLegend(mymap, attribute){
 
         //ste 3-- assign the cy (center y coord) and r (radius) attributes
         $('#'+key).attr({
-            cy: 179 - radius,
+            cy: 59 - radius,
             r: radius
         });
+
+
+        //add text to legend (step 4)
+        $('#'+key+'-text').text(Math.round(circleValues[key]*100)/100 + "refugees");
     };
 
 };

@@ -20,7 +20,10 @@ body{
     color: #848484;
     font-size: 21px;
 }
-
+#temporal-legend{
+    font-weight:bold;
+    font-size:15px;
+}
 #mapid {
 	height: 650px;
 	width: 99%;
