@@ -271,7 +271,7 @@ function searchOperator(data, someLayer){
 
 };
 
-function createLegend(mymap, attributes){
+function createLegend(mymap, attribute){
     var LegendControl = L.Control.extend({
         options: {
             position: 'bottomright'
@@ -318,7 +318,7 @@ function createLegend(mymap, attributes){
     });
 
     mymap.addControl(new LegendControl());
-    updateLegend(mymap, attributes[0]);
+    updateLegend(mymap, attribute[0]);
 
 };
 
@@ -340,7 +340,7 @@ function updateLegend(mymap, attribute){
 
         //ste 3-- assign the cy (center y coord) and r (radius) attributes
         $('#'+key).attr({
-            cy: 59 - radius,
+            cy: 90 - radius,
             r: radius
         });
 
@@ -374,7 +374,7 @@ function getCircleValues(mymap, attribute){
         };
     });
     //set the mean/average
-    var mean = (max + min)/2;
+    var mean = (max + min) / 2;
 
     //return vals as object
     return{
