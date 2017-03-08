@@ -282,28 +282,30 @@ function createLegend(mymap, attribute){
             var container = L.DomUtil.create('div', 'legend-container');
 
                 //inserting label on the legend
-            $(container).append('<div id ="temporal-legend">');
+            $(container).append('<div id="temporal-legend">');
 
             //step 1: starting attr legend svg string
-            var svg = '<svg id="attribute-legend" width="190px" height="80px">';
+            var svg = '<svg id="attribute-legend" width="195px" height="90px">';
 
             //array of circle names for loop
             var circles = {
-                max: 20,
-                mean: 40,
-                min: 60
+                max: 30,
+                mean: 50,
+                min: 70
             };
 
             //step 2: loop to add ea. circle and txt to svg string
             for (var circle in circles){
                 //circle string
-                svg+= '<circle class="legend-circle" id=' + circle +
-                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="30"/>';
+                //i missed a quotation mark below, so the legend wouldn't populate the circles
+                svg += '<circle class="legend-circle" id="' + circle +
+                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="35"/>';
             
                 //text string
-                svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>'
+                svg += '<text id="' + circle + '-text" x="80" y="' + circles[circle] + '"></text>'
 
             };
+
 
             //close the string
             svg += "</svg>";
@@ -354,8 +356,8 @@ function updateLegend(mymap, attribute){
 //function to calculate the mean, max, and min values for attributes
 function getCircleValues(mymap, attribute){
     //start with min at highest poss, and max at lowest poss number
-    var min = Infinity;
-    var max = -Infinity;
+    var min = Infinity,
+        max = -Infinity;
 
     mymap.eachLayer(function(layer){
         //get att value
