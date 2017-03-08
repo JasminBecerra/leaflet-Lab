@@ -7,25 +7,35 @@ div {
 body{
 	margin:5;
 }
+/*p{
+    text-align: center;
+    background-color: #a2aaa7;
+    color: white;
+
+}*/
+#title{
+    height: 30px;
+    text-align: center;
+    background-color: #cecece;
+    color: #848484;
+    font-size: 21px;
+}
 
 #mapid {
-	height: 700px;
-	width: 70%;
+	height: 650px;
+	width: 99%;
 	display: inline-block;
 }
 
-#panel {
+/*#panel {
     width: 25%;
     padding: 15px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
     line-height: 40px;
-}
+}*/
 
-.range-slider {
-    width: 30%;
-}
 
 #forward {
     float: right;
@@ -42,3 +52,26 @@ body{
     margin: 0.3em 0;
 }
 
+.sequence-control-container {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.range-slider {
+    width: 150px;
+}
+
+.legend-control-container{
+/*    width: 150px;
+    height: 80px;*/
+    background-color: rgba(255,255,255,0.8);
+    padding: 5px;
+    position: top;
+    text-align: center;
+    border: solid gray 1px;
+}
