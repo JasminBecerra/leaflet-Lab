@@ -158,6 +158,12 @@ function createSequenceControls(mymap, attributes){
                     L.DomEvent.stopPropagation(e);
                 });
 
+                //I just realized that if you use the slider in chrome, you also drag/pan the map
+                //found and adapted this quick solution form stackoverflow
+                if(!L.Browser.touch){
+                    L.DomEvent.disableClickPropagation(container);
+                }
+
                 return container;
             }
         });
@@ -299,7 +305,7 @@ function createLegend(mymap, attribute){
                 //circle string
                 //i missed a quotation mark below, so the legend wouldn't populate the circles
                 svg += '<circle class="legend-circle" id="' + circle +
-                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="35"/>';
+                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="40"/>';
             
                 //text string
                 svg += '<text id="' + circle + '-text" x="80" y="' + circles[circle] + '"></text>'
@@ -352,6 +358,12 @@ function updateLegend(mymap, attribute){
     };
 
 };
+
+//IMPORTANT: after trying to "debug" a problem with the svg circles in my legend,
+// I realized that because my data was very polar and skewed, the third circle is hardly visible
+//I thought I was missing a symbol-- it IS there, but it's so small you cannot see until you scroll
+//the "year" widget scroll bar to the right (year 2015)
+
 
 //function to calculate the mean, max, and min values for attributes
 function getCircleValues(mymap, attribute){
