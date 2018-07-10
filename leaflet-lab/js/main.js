@@ -4,8 +4,8 @@
 
     //create the map linked to div id 'mapid' from index.html
     var mymap = L.map('mapid', {
-        center: [15, 10],
-        zoom: 2
+        center: [20, 10],
+        zoom: 3
     });
 
     //add base tilelayer (from mapbox + open street map)
@@ -24,7 +24,7 @@
 //calculate the radius of each proportional symbol
 function calcPropRadius(attValue) {
     //scale factor to adjust symbol size evenly
-    var scaleFactor = .0017;
+    var scaleFactor = .001;
     //area based on attribute value and scale factor
     var area = attValue * scaleFactor;
     //radius calculated based on area
@@ -45,7 +45,7 @@ function pointToLayer(feature, latlng, attributes){
     //create marker options
     var options = {
         fillColor: "#72a393",
-        color: "#399372",
+        color: "#4e7265",
         weight: 1,
         opacity: 1,
         fillOpacity: 0.8
@@ -262,7 +262,7 @@ function searchOperator(data, someLayer){
     searchOp.on('search:locationfound', function(e) {
         e.layer.setStyle({
             fillColor: '#e29a9a',
-            color: '#399372'});
+            color: '#cc6464'});
 
             if(e.layer._popup)
                 e.layer.openPopup();
@@ -291,13 +291,13 @@ function createLegend(mymap, attribute){
             $(container).append('<div id="temporal-legend">');
 
             //step 1: starting attr legend svg string
-            var svg = '<svg id="attribute-legend" width="250px" height="140px">';
+            var svg = '<svg id="attribute-legend" width="195px" height="90px">';
 
             //array of circle names for loop
             var circles = {
-                max: 25,
-                mean: 55,
-                min: 90
+                max: 30,
+                mean: 50,
+                min: 70
             };
 
             //step 2: loop to add ea. circle and txt to svg string
@@ -305,10 +305,10 @@ function createLegend(mymap, attribute){
                 //circle string
                 //i missed a quotation mark below, so the legend wouldn't populate the circles
                 svg += '<circle class="legend-circle" id="' + circle +
-                '" fill="#72a393" fill-opacity="0.8" stroke="#399372" cx="60"/>';
+                '" fill="#72a393" fill-opacity="0.8" stroke="#4f7265" cx="40"/>';
             
                 //text string
-                svg += '<text id="' + circle + '-text" x="130" y="' + circles[circle] + '"+90"'+ '"></text>'
+                svg += '<text id="' + circle + '-text" x="80" y="' + circles[circle] + '"></text>'
 
             };
 
@@ -348,7 +348,7 @@ function updateLegend(mymap, attribute){
 
         //ste 3-- assign the cy (center y coord) and r (radius) attributes
         $('#'+key).attr({
-            cy: 105 - radius,
+            cy: 90 - radius,
             r: radius
         });
 
